@@ -16,8 +16,9 @@ try:
         os.system("cmd /c git add *")    
 except:
     os.system('cmd /c git add *')
-test = os.system('git commit -m "Update JSON" -a')
+os.system('git commit -m "Update JSON" -a')
+test = os.system('git push')
 if test == 1:
-    print("No need to update.")
+    print('No update was pushed.')
 else:
-    os.system('git push')
+    print('A update was pushed.')
