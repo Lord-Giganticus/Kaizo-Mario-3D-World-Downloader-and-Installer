@@ -1,4 +1,3 @@
-from os import path
 import os
 import sys
 if sys.argv[0].endswith('.exe') == False:
