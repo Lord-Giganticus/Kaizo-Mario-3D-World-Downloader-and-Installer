@@ -20,4 +20,8 @@ if os.path.isdir("Kaizo Mario 3D World Practice Mode") == True:
     os.remove("Kaizo Mario 3D World Practice Mode")
 else:
     pass
+if os.path.isdir("Kaizo Mario 3D World") == True:
+    os.system('cmd /c RD /S /Q "Kaizo Mario 3D World"')
+if os.path.isdir("Kaizo Mario 3D World Practice Mode") == True:
+    os.system('cmd /c RD /S /Q "Kaizo Mario 3D World Practice Mode"')
 os.system('cmd /c unzip.cmd')
