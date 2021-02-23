@@ -20,6 +20,6 @@ except:
     os.system('cmd /c git add *')
 test = os.system('git commit -m "Update JSON" -a')
 if test == 1:
-    pass
+    print("No need to update.")
 else:
     os.system('git push')
