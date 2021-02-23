@@ -8,9 +8,8 @@ if sys.argv[0].endswith('.exe') == False:
         pass
 else:
     pass
-if os.path.isfile('kaizo.json') == True:
-    os.remove('kaizo.json')
-os.system('cmd /c curl https://gamebanana.com/maps/download/211946?api=FilesModule -o kaizo.json')
+if os.path.isfile('kaizo.json') == False:
+    os.system('cmd /c curl https://gamebanana.com/maps/download/211946?api=FilesModule -o kaizo.json')
 try:
     if sys.argv[1] == "Action":
         os.system('cmd /c git config --local user.email "action@github.com" && git config --local user.name "GitHub Action" && git add *')
