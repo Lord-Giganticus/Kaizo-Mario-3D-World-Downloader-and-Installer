@@ -17,4 +17,4 @@ try:
 except:
     os.system('cmd /c git add *')
 os.system('git commit -m "Update JSON" -a')
-os.system('git push > test.txt')
+os.system('cmd /c git push > test.txt')
