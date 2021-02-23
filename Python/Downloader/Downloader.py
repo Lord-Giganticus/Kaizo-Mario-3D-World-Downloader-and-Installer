@@ -13,14 +13,6 @@ os.system('cmd /c curl https://gamebanana.com/maps/download/211946?api=FilesModu
 os.system('cmd /c node index > download.cmd')
 os.system('cmd /c download.cmd')
 if os.path.isdir("Kaizo Mario 3D World") == True:
-    os.remove("Kaizo Mario 3D World")
-else:
-    pass
-if os.path.isdir("Kaizo Mario 3D World Practice Mode") == True:
-    os.remove("Kaizo Mario 3D World Practice Mode")
-else:
-    pass
-if os.path.isdir("Kaizo Mario 3D World") == True:
     os.system('cmd /c RD /S /Q "Kaizo Mario 3D World"')
 if os.path.isdir("Kaizo Mario 3D World Practice Mode") == True:
     os.system('cmd /c RD /S /Q "Kaizo Mario 3D World Practice Mode"')
