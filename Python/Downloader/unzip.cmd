@@ -1,0 +1,1 @@
+7z x *.zip -x!"Update 2.0.png" -x!"KM3Dpm Logo.png" -x!"KM3D Logo.png" -x!"KM3D Icon.png" -x!"KM3D Banner.png" -x!"KM3Dpm Banner.png" -x!"KM3Dpm Icon.png"
