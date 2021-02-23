@@ -21,8 +21,3 @@ if os.path.isdir("Kaizo Mario 3D World Practice Mode") == True:
 else:
     pass
 os.system('cmd /c unzip.cmd')
-os.chdir('Kaizo Mario 3D World')
-os.chdir("meta")
-os.remove("meta.xml")
-os.chdir('../../Kaizo Mario 3D World Practice Mode/meta')
-os.remove("meta.xml")
