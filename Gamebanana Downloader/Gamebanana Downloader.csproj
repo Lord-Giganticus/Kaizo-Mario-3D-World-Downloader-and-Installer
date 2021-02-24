@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +47,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Gamebanana_Downloader.Program</StartupObject>
@@ -91,6 +93,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "..\..\..\Url Fetcher\app.js" "$(TargetDir)\app.js" &amp;&amp; copy /Y "$(ProjectDir)\example.cmd" "%25CD%25\example.cmd" &amp;&amp; echo %25CD%25 &amp;&amp; mv "$(TargetName).exe" GB-DL.exe &amp;&amp; copy  /Y "$(TargetDir)\GB-DL.exe" "$(SolutionDir)\Installer\References\GB-DL.exe" &amp;&amp; copy /Y "$(TargetDir)\app.js" "$(SolutionDir)\Installer\References\app.js"</PostBuildEvent>
+    <PostBuildEvent>copy /Y "..\..\..\Url Fetcher\app.js" "$(TargetDir)\app.js" &amp;&amp; copy /Y "$(ProjectDir)\example.cmd" "%25CD%25\example.cmd" &amp;&amp; echo %25CD%25 &amp;&amp; copy "$(TargetName).exe" GB-DL.exe</PostBuildEvent>
   </PropertyGroup>
 </Project>

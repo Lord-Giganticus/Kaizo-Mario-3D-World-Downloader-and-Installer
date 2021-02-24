@@ -28,6 +28,10 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'GB-DL (DLL)' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\GB-DL (DLL)\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <AdditionalFiles Include="app.js" />
     <Content Include="config.json" />
