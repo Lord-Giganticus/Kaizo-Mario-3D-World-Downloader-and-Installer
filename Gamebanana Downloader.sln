@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamebanana Downloader", "Gamebanana Downloader\Gamebanana Downloader.csproj", "{42827912-872F-47AE-A3CA-AD6FF479C5E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{54456C2F-92BF-4E4D-8783-902B2E72218F} = {54456C2F-92BF-4E4D-8783-902B2E72218F}
+	EndProjectSection
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Url Fetcher", "Url Fetcher\Url Fetcher.njsproj", "{54456C2F-92BF-4E4D-8783-902B2E72218F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42827912-872F-47AE-A3CA-AD6FF479C5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42827912-872F-47AE-A3CA-AD6FF479C5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42827912-872F-47AE-A3CA-AD6FF479C5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42827912-872F-47AE-A3CA-AD6FF479C5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54456C2F-92BF-4E4D-8783-902B2E72218F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54456C2F-92BF-4E4D-8783-902B2E72218F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54456C2F-92BF-4E4D-8783-902B2E72218F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54456C2F-92BF-4E4D-8783-902B2E72218F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9D905C3-08A9-47C3-AAD3-835C699CE7F8}
+	EndGlobalSection
+EndGlobal

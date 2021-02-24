@@ -1,23 +1,24 @@
 {
     "_aAdditionalViewVariables": [],
-    "_sViewTemplate": "?>\n<ul>\n<? foreach($d[\"_aFiles\"] as $_idFileRow => $_aFile): ?>\n<li>\n<div class=\"FileInfo\">\n<span>\n<code><?= $_aFile[\"_sFile\"] ?><\/code>\n<? if (!empty($_aFile[\"_aMetadata\"])\n&& !empty($_aFile[\"_aMetadata\"][\"_aArchiveFileTree\"])\n&& strstr(strtolower(implode(\" \",$_aFile[\"_aMetadata\"][\"_aArchiveFileTree\"])),\".exe\")): ?>\n<stateLabel class=\"RedColor\">Executable<\/stateLabel>\n<div class=\"BananaTip\">\n<div class=\"Title\">Warning<\/div>\nThis file is or contains an executable.\n<\/div>\n<? endif ?>\n<\/span>\n<? if (isset($_aFile[\"_sDescription\"]) && !empty($_aFile[\"_sDescription\"])): ?>\n<small class=\"Description\" title=\"Description\">\n<matIcon>insert_drive_file<\/matIcon>\n<?= $_aFile[\"_sDescription\"] ?>\n<\/small>\n<? endif ?>\n<small class=\"Info\">\n<wrapper>\n<matIcon>access_time<\/matIcon>\n<?= \\gamebanana\\eColoredDate($_aFile[\"_tsDateAdded\"]) ?>\n<\/wrapper>\n<wrapper title=\"Downloads\">\n<matIcon>cloud_download<\/matIcon>\n<itemCount>\n<?= number_format($_aFile[\"_nDownloadCount\"]) ?>\n<\/itemCount>\n<\/wrapper>\n<? if (!empty($_aFile[\"_nFilesize\"])): ?>\n<wrapper title=\"Filesize\">\n<matIcon>save<\/matIcon>\n<itemCount>\n<?= number_format($_aFile[\"_nFilesize\"]) ?> bytes\n<\/itemCount>\n<itemCount>\n(<?= size_format($_aFile[\"_nFilesize\"]) ?>)\n<\/itemCount>\n<\/wrapper>\n<? endif ?>\n<\/small>\n<\/div>\n<div class=\"DownloadOptions\">\n<? if (!empty($d[\"_aModManagerIntegrations\"])\n&& isset($d[\"_aModManagerIntegrations\"][$_idFileRow])): ?>\n<? foreach ($d[\"_aModManagerIntegrations\"][$_idFileRow] as $_aModManagerIntegrator): ?>\n<a href=\"<?= $_aModManagerIntegrator[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"<?= $_aModManagerIntegrator[\"_sIconClasses\"] ?>\"><\/spriteIcon>\n<? if (isset($_aModManagerIntegrator[\"_sPlatform\"])): ?>\n<spriteIcon title=\"<?= $_aModManagerIntegrator[\"_sPlatform\"] ?>\" class=\"PlatformIcon <?= $_aModManagerIntegrator[\"_sPlatform\"] ?>Icon\"><\/spriteIcon>\n<? endif ?>\n<span>\n<?= $_aModManagerIntegrator[\"_sInstallerName\"] ?>\n<small>1-Click Install<\/small>\n<\/span>\n<\/a>\n<div class=\"BananaTip\">\n<div class=\"Title\">1-Click Install<\/div>\nInstall this Map quickly and easily\nwith <a href=\"<?= $_aModManagerIntegrator[\"_sInstallerUrl\"] ?>\">\n<?= $_aModManagerIntegrator[\"_sInstallerName\"] ?>\n<\/a>\n<? if (isset($_aModManagerIntegrator[\"_sPlatform\"])): ?>\nfor <?= $_aModManagerIntegrator[\"_sPlatform\"] ?>\n<? endif ?>\n<\/div>\n<? endforeach ?>\n<? endif ?>\n<a class=\"GreenColor\" href=\"<?= $_aFile[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"MiscIcon SmallManualDownloadIcon\"><\/spriteIcon>\n<span>Download<\/span>\n<\/a>\n<\/div>\n<\/li>\n<? endforeach ?>\n<\/ul>\n<?",
+    "_sViewTemplate": "?>\n<ul>\n<? foreach($d[\"_aFiles\"] as $_idFileRow => $_aFile): ?>\n<li>\n<div class=\"FileInfo\">\n<span>\n<code><?= $_aFile[\"_sFile\"] ?><\/code>\n<?= \\gamebanana\\eColoredDate($_aFile[\"_tsDateAdded\"]) ?>\n<? if (!empty($_aFile[\"_aMetadata\"])\n&& !empty($_aFile[\"_aMetadata\"][\"_aArchiveFileTree\"])\n&& strstr(strtolower(implode(\" \",$_aFile[\"_aMetadata\"][\"_aArchiveFileTree\"])),\".exe\")): ?>\n<stateLabel class=\"RedColor\">Executable<\/stateLabel>\n<div class=\"BananaTip\">\n<div class=\"Title\">Warning<\/div>\nThis file is or contains an executable\n<\/div>\n<? endif ?>\n<\/span>\n<? if (isset($_aFile[\"_sDescription\"]) && !empty($_aFile[\"_sDescription\"])): ?>\n<small class=\"Description\" title=\"Description\">\n<matIcon>insert_drive_file<\/matIcon>\n<?= $_aFile[\"_sDescription\"] ?>\n<\/small>\n<? endif ?>\n<\/div>\n<div class=\"DownloadOptions\">\n<? if (!empty($d[\"_aModManagerIntegrations\"])\n&& isset($d[\"_aModManagerIntegrations\"][$_idFileRow])): ?>\n<? foreach ($d[\"_aModManagerIntegrations\"][$_idFileRow] as $_aModManagerIntegrator): ?>\n<a href=\"<?= $_aModManagerIntegrator[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"<?= $_aModManagerIntegrator[\"_sIconClasses\"] ?>\"><\/spriteIcon>\n<? if (isset($_aModManagerIntegrator[\"_sPlatform\"])): ?>\n<spriteIcon title=\"<?= $_aModManagerIntegrator[\"_sPlatform\"] ?>\" class=\"PlatformIcon <?= $_aModManagerIntegrator[\"_sPlatform\"] ?>Icon\"><\/spriteIcon>\n<? endif ?>\n<span>\n<?= $_aModManagerIntegrator[\"_sInstallerName\"] ?>\n<small>1-Click Install<\/small>\n<\/span>\n<\/a>\n<div class=\"BananaTip\">\n<div class=\"Title\">1-Click Install<\/div>\nInstall this Map quickly and easily\nwith <a href=\"<?= $_aModManagerIntegrator[\"_sInstallerUrl\"] ?>\">\n<?= $_aModManagerIntegrator[\"_sInstallerName\"] ?>\n<\/a>\n<? if (isset($_aModManagerIntegrator[\"_sPlatform\"])): ?>\nfor <?= $_aModManagerIntegrator[\"_sPlatform\"] ?>\n<? endif ?>\n<\/div>\n<? endforeach ?>\n<? endif ?>\n<? if (\\gamebanana\\userid() > 0): ?>\n<a class=\"GreenColor\" href=\"<?= $_aFile[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"MiscIcon SmallManualDownloadIcon\"><\/spriteIcon>\n<span>Download<\/span>\n<\/a>\n<a href=\"<?= $d[\"_sDownloadUrl\"] ?>\" class=\"FileInfoLink\">\n<spriteIcon class=\"MiscIcon FileInfoIcon\"><\/spriteIcon>\n<span>File Info<\/span>\n<\/a>\n<? else: ?>\n<a class=\"GreenColor\" href=\"<?= $d[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"MiscIcon SmallManualDownloadIcon\"><\/spriteIcon>\n<span>Manual Download<\/span>\n<\/a>\n<? endif ?>\n<\/div>\n<\/li>\n<? endforeach ?>\n<\/ul>\n<?",
     "_aCellValues": {
+        "_sDownloadUrl": "https:\/\/gamebanana.com\/maps\/download\/211946",
         "_aFiles": {
-            "523732": {
-                "_sFile": "kaizo_mario_3d_world_practice_203xb.zip",
-                "_nFilesize": 73300991,
-                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/523732",
+            "523733": {
+                "_sFile": "kaizo_mario_3d_world_203xb.zip",
+                "_nFilesize": 73176271,
+                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/523733",
                 "_sDescription": "BUG FIXES, ALL THE BUG FIXES, GIMME!!",
-                "_tsDateAdded": 1613999327,
-                "_nDownloadCount": 7,
+                "_tsDateAdded": 1613999349,
+                "_nDownloadCount": 40,
                 "_sAnalysisResult": "Archive passed",
                 "_aMetadata": {
                     "_sMimeType": "application\/zip",
                     "_aArchiveFileTree": {
-                        "0": "KM3Dpm Banner.png",
-                        "1": "KM3Dpm Icon.png",
-                        "2": "KM3Dpm Logo.png",
-                        "Kaizo Mario 3D World Practice Mode": {
+                        "0": "KM3D Banner.png",
+                        "1": "KM3D Icon.png",
+                        "2": "KM3D Logo.png",
+                        "Kaizo Mario 3D World": {
                             "content": {
                                 "LayoutData": [
                                     "TitleLogo.szs"
@@ -838,21 +839,21 @@
                     }
                 }
             },
-            "523733": {
-                "_sFile": "kaizo_mario_3d_world_203xb.zip",
-                "_nFilesize": 73176271,
-                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/523733",
+            "523732": {
+                "_sFile": "kaizo_mario_3d_world_practice_203xb.zip",
+                "_nFilesize": 73300991,
+                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/523732",
                 "_sDescription": "BUG FIXES, ALL THE BUG FIXES, GIMME!!",
-                "_tsDateAdded": 1613999349,
-                "_nDownloadCount": 8,
+                "_tsDateAdded": 1613999327,
+                "_nDownloadCount": 21,
                 "_sAnalysisResult": "Archive passed",
                 "_aMetadata": {
                     "_sMimeType": "application\/zip",
                     "_aArchiveFileTree": {
-                        "0": "KM3D Banner.png",
-                        "1": "KM3D Icon.png",
-                        "2": "KM3D Logo.png",
-                        "Kaizo Mario 3D World": {
+                        "0": "KM3Dpm Banner.png",
+                        "1": "KM3Dpm Icon.png",
+                        "2": "KM3Dpm Logo.png",
+                        "Kaizo Mario 3D World Practice Mode": {
                             "content": {
                                 "LayoutData": [
                                     "TitleLogo.szs"
