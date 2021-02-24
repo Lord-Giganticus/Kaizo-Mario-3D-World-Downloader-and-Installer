@@ -1,4 +1,4 @@
-﻿using Gamebanana_Downloader;
+﻿using GB_DL;
 
 namespace Installer
 {

@@ -10,11 +10,6 @@ namespace GB_DL
         public static void Main(string args)
         {
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
-            if (args.Length == 0)
-            {
-                Console.WriteLine("Please enter a argument.");
-                Environment.Exit(1);
-            }
             if (args.StartsWith("https://gamebanana.com") == false)
             {
                 Console.WriteLine("I need a Gamebanana url in order to work!");
