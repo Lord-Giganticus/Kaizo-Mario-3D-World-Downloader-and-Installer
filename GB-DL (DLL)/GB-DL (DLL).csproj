@@ -7,8 +7,8 @@
     <ProjectGuid>{9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GB_DL__DLL_</RootNamespace>
-    <AssemblyName>GB-DL %28DLL%29</AssemblyName>
+    <RootNamespace>GB_DL</RootNamespace>
+    <AssemblyName>GB-DL</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,4 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "$(SolutionDir)Installer\References\$(TargetFileName)" &amp;&amp; copy "$(SolutionDir)Url Fetcher\app.js" "$(SolutionDir)Installer\References\app.js" &amp;&amp; echo %25CD%25</PostBuildEvent>
+  </PropertyGroup>
 </Project>
