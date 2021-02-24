@@ -1,6 +1,6 @@
 {
   "name": "url-fetcher",
-  "version": "0.0.0",
+  "version": "1.0.0.0",
   "description": "Url Fetcher",
   "main": "app.js",
   "author": {
