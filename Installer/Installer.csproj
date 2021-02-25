@@ -83,6 +83,6 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)References\app.js" "%25CD%25\app.js" &amp;&amp; copy "$(ProjectDir)*.ico" "%25CD%25" &amp;&amp; copy "$(ProjectDir)*.nsi" "%25CD%25" &amp;&amp; copy "$(ProjectDir)nsis.cmd" "%25CD%25"</PostBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)References\app.js" "%25CD%25\app.js" &amp;&amp; copy "$(ProjectDir)*.ico" "%25CD%25" &amp;&amp; copy "$(ProjectDir)*.nsi" "%25CD%25" &amp;&amp; copy "$(ProjectDir)nsis.cmd" "%25CD%25" &amp;&amp; echo 7z a Release.zip *.exe -x!Installer.exe &gt; zip.cmd &amp;&amp; echo copy "$(TargetDir)Release.zip" "$(SolutionDir)Release.zip" &gt; move.cmd</PostBuildEvent>
   </PropertyGroup>
 </Project>

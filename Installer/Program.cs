@@ -27,7 +27,7 @@ namespace Installer
                     outputFile.WriteLine(line);
             }
             Process.Start("CMD.exe", "/c move rules.txt \"Kaizo Mario 3D World Practice Mode\" && exit").WaitForExit();
-            Process.Start("CMD.exe", "/c nsis.cmd");
+            Process.Start("CMD.exe", "/c nsis.cmd && zip.cmd && move.cmd && exit").WaitForExit();
         }  
     }
 }
