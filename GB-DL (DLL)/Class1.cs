@@ -35,7 +35,7 @@ namespace GB_DL
                 }
                 Process.Start("CMD.exe", "/c node app > download.cmd && download.cmd && del /f download.cmd && exit").WaitForExit();
                 Console.WriteLine("Complete.");
-                Environment.Exit(0);
+                return;
             }
         }
     }

@@ -67,4 +67,7 @@
     <PreBuildEvent>
     </PreBuildEvent>
   </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)References\app.js" "%25CD%25\app.js" &amp;&amp; echo %25CD%25</PostBuildEvent>
+  </PropertyGroup>
 </Project>
