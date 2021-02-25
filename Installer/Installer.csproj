@@ -77,6 +77,6 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)References\app.js" "%25CD%25\app.js" &amp;&amp; copy "$(ProjectDir)CEMU-Normal.nsi" "%25CD%25\CEMU-Normal.nsi" &amp;&amp; copy "$(ProjectDir)Normal.ico" "%25CD%25\Normal.ico" &amp;&amp; copy "$(ProjectDir)Practice.ico" "%25CD%25\Practice.ico" &amp;&amp; copy "$(ProjectDir)CEMU-Practice.nsi" "%25CD%25\CEMU-Practice.nsi"</PostBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)References\app.js" "%25CD%25\app.js" &amp;&amp; copy "$(ProjectDir)*.ico" "%25CD%25" &amp;&amp; copy "$(ProjectDir)*.nsi" "%25CD%25"</PostBuildEvent>
   </PropertyGroup>
 </Project>
