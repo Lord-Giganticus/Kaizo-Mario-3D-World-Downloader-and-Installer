@@ -19,14 +19,14 @@ namespace Installer
                 foreach (string line in normal_lines)
                     outputFile.WriteLine(line);
             }
-            Process.Start("CMD.exe", "move rules.txt \"Kaizo Mario 3D World\" && exit").WaitForExit();
+            Process.Start("CMD.exe", "/c move rules.txt \"Kaizo Mario 3D World\" && exit").WaitForExit();
             string[] practice_lines = { "[Definition]", "titleIds = " + EUR.key + "," + USA.key + "," + JPN.key, "name = Kaizo Mario 3D World Practice Mode", "path = \"Super Mario 3D World/Mods/Kaizo Mario 3D World/Practice Mode\"", "description = Mario's back and this time, I don't think he's gonna have it so easy...", "version = 5" };
             using (StreamWriter outputFile = new StreamWriter("rules.txt"))
             {
                 foreach (string line in practice_lines)
                     outputFile.WriteLine(line);
             }
-            Process.Start("CMD.exe", "move rules.txt \"Kaizo Mario 3D World Practice Mode\" && exit").WaitForExit();
+            Process.Start("CMD.exe", "/c move rules.txt \"Kaizo Mario 3D World Practice Mode\" && exit").WaitForExit();
         }
     }
 }
