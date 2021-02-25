@@ -47,7 +47,7 @@
       <HintPath>References\GB-DL.dll</HintPath>
     </Reference>
     <Reference Include="SM3DW-Keys">
-      <HintPath>..\..\..\..\..\C#\Super-Mario-3d-World-Mod-Downloader\DLLs\SM3DW-Keys.dll</HintPath>
+      <HintPath>References\SM3DW-Keys.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
