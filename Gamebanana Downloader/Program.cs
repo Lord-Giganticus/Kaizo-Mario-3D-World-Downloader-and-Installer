@@ -23,11 +23,8 @@ namespace Gamebanana_Downloader
             {
                 if (args[0].EndsWith("?api=FilesModule") == false)
                 {
-                    string url = args[0]+"?api=FilesModule";
-                    using (var client = new WebClient())
-                    {
-                        client.DownloadFile(url, "config.json");
-                    }
+                    Console.WriteLine("I need the following to be added to the url at the end:\t?api=FilesModule");
+                    Environment.Exit(1);
                 } else
                 {
                     string url = args[0];

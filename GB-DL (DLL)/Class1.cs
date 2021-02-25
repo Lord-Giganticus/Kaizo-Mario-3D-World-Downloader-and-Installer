@@ -19,10 +19,10 @@ namespace GB_DL
             {
                 if (args.EndsWith("?api=FilesModule") == false)
                 {
-                    string url = args + "?api=FilesModule";
-                    using (var client = new WebClient())
+                    if (args.EndsWith("?api=FilesModule") == false)
                     {
-                        client.DownloadFile(url, "config.json");
+                        Console.WriteLine("I need the following to be added to the url at the end:\t?api=FilesModule");
+                        Environment.Exit(1);
                     }
                 }
                 else
