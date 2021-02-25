@@ -46,6 +46,9 @@
     <Reference Include="GB-DL">
       <HintPath>References\GB-DL.dll</HintPath>
     </Reference>
+    <Reference Include="SM3DW-Keys">
+      <HintPath>..\..\..\..\..\C#\Super-Mario-3d-World-Mod-Downloader\DLLs\SM3DW-Keys.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CEMU-Normal.nsi" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -68,6 +72,6 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)References\app.js" "%25CD%25\app.js" &amp;&amp; echo %25CD%25</PostBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)References\app.js" "%25CD%25\app.js" &amp;&amp; copy "$(ProjectDir)CEMU-Normal.nsi" "%25CD%25\CEMU-Normal.nsi" &amp;&amp; copy "$(ProjectDir)Normal.ico" "%25CD%25\Normal.ico"</PostBuildEvent>
   </PropertyGroup>
 </Project>
