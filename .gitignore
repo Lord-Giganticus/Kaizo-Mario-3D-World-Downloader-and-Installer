@@ -492,5 +492,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 #Custom stuff
-docs\files\urls.txt
-urls.txt
+Release.zip
