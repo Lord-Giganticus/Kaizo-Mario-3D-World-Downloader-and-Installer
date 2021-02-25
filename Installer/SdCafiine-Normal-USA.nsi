@@ -21,15 +21,15 @@ Page directory
 Page instfiles
 
 ;--------------------------------
-Icon "..\Normal.ico"
-!define MUI_ICON "..\Normal.ico"
-!define MUI_UNICON "..\Normal.ico"
+Icon "Normal.ico"
+!define MUI_ICON "Normal.ico"
+!define MUI_UNICON "Normal.ico"
 ; The stuff to install
 Section "" ;No components page, name is not important
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
   
   ; Put file there
-  File /r "..\Kaizo Mario 3D World\content"
+  File /r "Kaizo Mario 3D World\content"
   
 SectionEnd ; end the section
