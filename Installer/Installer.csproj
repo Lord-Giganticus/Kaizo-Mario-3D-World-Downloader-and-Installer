@@ -66,6 +66,12 @@
     <None Include="App.config" />
     <None Include="CEMU-Normal.nsi" />
     <None Include="CEMU-Practice.nsi" />
+    <None Include="SdCafiine-Normal-EUR.nsi" />
+    <None Include="SdCafiine-Normal-JPN.nsi" />
+    <None Include="SdCafiine-Normal-USA.nsi" />
+    <None Include="SdCafiine-Practice-EUR.nsi" />
+    <None Include="SdCafiine-Practice-JPN.nsi" />
+    <None Include="SdCafiine-Practice-USA.nsi" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Normal.ico" />

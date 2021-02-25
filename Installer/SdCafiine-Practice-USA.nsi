@@ -21,7 +21,7 @@ Page directory
 Page instfiles
 
 ;--------------------------------
-Icon ".Practice.ico"
+Icon "Practice.ico"
 !define MUI_ICON "Practice.ico"
 !define MUI_UNICON "Practice.ico"
 ; The stuff to install
