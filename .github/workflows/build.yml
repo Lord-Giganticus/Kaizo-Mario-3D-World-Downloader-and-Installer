@@ -1,0 +1,40 @@
+# This is a basic workflow that is manually triggered
+
+name: Manual workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v2
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.2
+      with:
+        vs-version: '16.5'
+    - name: Install cURL
+      run: choco install curl
+    - name: Run Scripts
+      run: build.cmd
+      shell: cmd
+    - name: Upload Files
+      uses: actions/upload-artifact@v2
+      with:
+        name: Release
+        path: |
+          Release.zip 
+    - name: Make a release     
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: false
+        title: "Latest Build"
+        files: |
+          Release.zip
