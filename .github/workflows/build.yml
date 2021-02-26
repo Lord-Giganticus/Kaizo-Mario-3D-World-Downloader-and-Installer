@@ -6,7 +6,18 @@ name: Build
 # or API.
 on:
   workflow_dispatch:
-
+    inputs:
+      tag:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Tag for Release'
+        # Default value if no value is explicitly provided
+        default: '2.02xc'
+        # Input has to be provided for the workflow to run
+        required: true
+      body:
+        description: 'Put GB update url here'
+        default: 'https://gamebanana.com/updates/70119'
+        required: true
 jobs:
   build:
 
@@ -28,13 +39,17 @@ jobs:
       with:
         name: Release
         path: |
-          Release.zip 
-    - name: Make a release     
-      uses: "marvinpinto/action-automatic-releases@latest"
+          Kaizo Mario 3D World Normal Mode.exe
+          Kaizo Mario 3D World Practice Mode.exe
+    - name: Make Release
+      uses: actions/create-release@v1
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
-        prerelease: false
-        title: "Latest Build"
-        files: |
-          Release.zip
+          tag_name: ${{ github.event.inputs.tag }}
+          release_name: Release ${{ github.event.inputs.tag }}
+          body: |
+            Changes in this Release are on this link:
+            ${{ github.event.inputs.tag }}
+          draft: false
+          prerelease: false
