@@ -19,7 +19,7 @@ jobs:
       with:
         vs-version: '16.5'
     - name: Install cURL
-      run: choco install curl
+      run: choco install curl --acceptlicense --confirm
     - name: Run Scripts
       run: build.cmd
       shell: cmd
