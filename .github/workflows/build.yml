@@ -15,19 +15,8 @@ on:
         # Input has to be provided for the workflow to run
         required: true
       body:
-        description: 'Body for Release'
-        default: |
-          - brain update
-          changes:
-          - My brain hurts
-          - Check stream vod for more context on why it hurts
-          - it works
-          - I changed thingie mayro said
-          - no blind jump 1-2 fix
-          - bug fix
-          - 1-2 fix
-          - 1-2
-          - ow my brain
+        description: 'Put GB update url here'
+        default: 'https://gamebanana.com/updates/70119'
         required: true
 jobs:
   build:
@@ -60,7 +49,7 @@ jobs:
           tag_name: ${{ github.event.inputs.tag }}
           release_name: Release ${{ github.event.inputs.tag }}
           body: |
-            Changes in this Release
+            Changes in this Release are on this link:
             ${{ github.event.inputs.tag }}
           draft: false
           prerelease: false
