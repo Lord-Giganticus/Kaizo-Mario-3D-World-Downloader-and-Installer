@@ -28,8 +28,6 @@ namespace Installer
             }
             Process.Start("CMD.exe", "/c move rules.txt \"Kaizo Mario 3D World Practice Mode\" && exit").WaitForExit();
             Process.Start("CMD.exe", "/c nsis.cmd").WaitForExit();
-            Process.Start("CMD.exe", "/c 7z a Release.zip *.exe -x!Installer.exe");
-            Process.Start("CMD.exe", "/c mv Release.zip ../../../../.");
             Environment.Exit(0);
         }  
     }
