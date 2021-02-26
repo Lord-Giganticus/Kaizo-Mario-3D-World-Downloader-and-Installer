@@ -6,3 +6,5 @@ makensis SdCafiine-Normal-USA.nsi
 makensis SdCafiine-Practice-EUR.nsi
 makensis SdCafiine-Practice-JPN.nsi
 makensis SdCafiine-Practice-USA.nsi
+makensis Normal.nsi
+makensis Practice.nsi
