@@ -14,10 +14,6 @@ on:
         default: '2.02xc'
         # Input has to be provided for the workflow to run
         required: true
-      body:
-        description: 'Put GB update url here'
-        default: 'https://gamebanana.com/updates/70119'
-        required: true
 jobs:
   build:
 
@@ -41,15 +37,13 @@ jobs:
         path: |
           Kaizo Mario 3D World Normal Mode.exe
           Kaizo Mario 3D World Practice Mode.exe
-    - name: Make Release
-      uses: actions/create-release@v1
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+    - name: Make a release
+      uses: "marvinpinto/action-automatic-releases@latest"
       with:
-          tag_name: ${{ github.event.inputs.tag }}
-          release_name: Release ${{ github.event.inputs.tag }}
-          body: |
-            Changes in this Release are on this link:
-            ${{ github.event.inputs.tag }}
-          draft: false
-          prerelease: false
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "${{ github.event.inputs.tag }}"
+        prerelease: false
+        title: "Version ${{ github.event.inputs.tag }}"
+        files: |
+          Kaizo Mario 3D World Normal Mode.exe
+          Kaizo Mario 3D World Practice Mode.exe
