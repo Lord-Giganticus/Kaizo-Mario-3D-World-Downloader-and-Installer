@@ -7,7 +7,7 @@ cd ../../../
 cd Installer
 mv KM3DW.nsi ../.
 cd ../
-echo makensis KM3DW.nsi > Release.cmd
-Release
+makensis KM3DW.nsi
+mv KM3DW.nsi Installer/.
 7z a Release.zip "Kaizo Mario 3D World.exe"
 echo Complete
