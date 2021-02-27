@@ -8,4 +8,3 @@ makensis SdCafiine-Practice-JPN.nsi
 makensis SdCafiine-Practice-USA.nsi
 makensis Normal.nsi
 makensis Practice.nsi
-makensis KM3DW.nsi
