@@ -34,9 +34,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Release
-        path: |
-          Kaizo Mario 3D World Normal Mode.exe
-          Kaizo Mario 3D World Practice Mode.exe
+        path: Kaizo Mario 3D World.exe
     - name: Make a release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
@@ -44,6 +42,4 @@ jobs:
         automatic_release_tag: "${{ github.event.inputs.tag }}"
         prerelease: false
         title: "Version ${{ github.event.inputs.tag }}"
-        files: |
-          Kaizo Mario 3D World Normal Mode.exe
-          Kaizo Mario 3D World Practice Mode.exe
+        files: Kaizo Mario 3D World Normal Mode.exe
