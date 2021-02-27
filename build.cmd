@@ -6,8 +6,9 @@ mv "Kaizo Mario 3D World Practice Mode.exe" ../../../.
 cd ../../../
 cd Installer
 mv KM3DW.nsi ../.
-cd ../
+mv Normal.ico ../.
 makensis KM3DW.nsi
 mv KM3DW.nsi Installer/.
+mv Normal.ico Installer/.
 7z a Release.zip "Kaizo Mario 3D World.exe"
 echo Complete
