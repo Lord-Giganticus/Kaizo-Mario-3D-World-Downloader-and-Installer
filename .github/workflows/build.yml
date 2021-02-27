@@ -43,4 +43,4 @@ jobs:
         prerelease: false
         title: "Version ${{ github.event.inputs.tag }}"
         files: |
-        Kaizo Mario 3D World Normal Mode.exe
+          Kaizo Mario 3D World Normal Mode.exe
