@@ -11,7 +11,7 @@ RequestExecutionLevel user
 Unicode True
 
 ; The default installation directory
-InstallDir "$DESKTOP\Kaizo Mario 3D World"
+InstallDir "$DESKTOP\Kaizo Mario 3D World\Practice Mode"
 
 ;--------------------------------
 
