@@ -32,5 +32,6 @@ Section "" ;No components page, name is not important
   File "bin\Release\Updater.exe"
   File /r "Runtimes"  
   File "Checker.js"
+  File "Check.cmd"
 
 SectionEnd ; end the section
