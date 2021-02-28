@@ -21,13 +21,16 @@ Page directory
 Page instfiles
 
 ;--------------------------------
+Icon "Normal.ico"
+!define MUI_ICON "Normal.ico"
+!define MUI_UNICON "Normal.ico"
 ; The stuff to install
 Section "" ;No components page, name is not important
   ; Set output path to the installation directory.
   SetOutPath $INSTDIR
   ; Put file there
   File "bin\Release\Updater.exe"
-  File "Runtimes"  
+  File /r "Runtimes"  
   File "Checker.js"
 
 SectionEnd ; end the section
