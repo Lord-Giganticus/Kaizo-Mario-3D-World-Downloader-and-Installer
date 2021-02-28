@@ -27,7 +27,7 @@ Section "" ;No components page, name is not important
   SetOutPath $INSTDIR
   ; Put file there
   File "bin\Release\Updater.exe"
-  File "Files\*.exe"  
+  File "Runtimes"  
   File "Checker.js"
 
 SectionEnd ; end the section
