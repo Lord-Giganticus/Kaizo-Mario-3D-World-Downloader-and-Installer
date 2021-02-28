@@ -6,6 +6,6 @@ if (version != tag_name) {
     console.log("curl -L",url,name);
     return process.exit(0);
 } else {
-    console.log("No need to update!");
+    console.log("echo No need to update!");
     return process.exit(0);
 }
