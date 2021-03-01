@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB-DL (DLL)", "GB-DL (DLL)\
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Updater", "Updater\Updater.pyproj", "{0DAE217B-EAB8-4A7D-97EC-48774EAA6038}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "js2exe", "js2exe\js2exe.njsproj", "{9674BCCD-8268-47B4-94E6-DEB216B835E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0DAE217B-EAB8-4A7D-97EC-48774EAA6038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0DAE217B-EAB8-4A7D-97EC-48774EAA6038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9674BCCD-8268-47B4-94E6-DEB216B835E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9674BCCD-8268-47B4-94E6-DEB216B835E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9674BCCD-8268-47B4-94E6-DEB216B835E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9674BCCD-8268-47B4-94E6-DEB216B835E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

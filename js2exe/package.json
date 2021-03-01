@@ -1,0 +1,12 @@
+{
+  "name": "js2exe",
+  "version": "0.0.0",
+  "description": "js2exe",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "pkg": "^4.4.9"
+  }
+}
