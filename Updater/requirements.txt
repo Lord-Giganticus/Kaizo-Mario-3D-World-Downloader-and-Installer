@@ -1,1 +1,3 @@
+pyinstaller==4.2
+pyinstaller-hooks-contrib==2020.11
 requests==2.25.1
