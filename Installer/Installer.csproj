@@ -85,6 +85,6 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>copy "$(ProjectDir)References\app.js" "%25CD%25\app.js" &amp;&amp; copy "$(ProjectDir)*.ico" "%25CD%25" &amp;&amp; copy "$(ProjectDir)*.nsi" "%25CD%25" &amp;&amp; copy "$(ProjectDir)nsis.cmd" "%25CD%25"</PostBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)*.ico" "%25CD%25" &amp;&amp; copy "$(ProjectDir)*.nsi" "%25CD%25" &amp;&amp; copy "$(ProjectDir)nsis.cmd" "%25CD%25" &amp;&amp; copy "$(ProjectDir)References\js2exe.exe" "%25CD%25"</PostBuildEvent>
   </PropertyGroup>
 </Project>

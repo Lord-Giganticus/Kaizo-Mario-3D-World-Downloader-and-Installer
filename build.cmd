@@ -1,3 +1,5 @@
+cd js2exe
+cmd /c build-js
 msbuild "Installer\Installer.csproj" -p:Configuration=Release
 cd Updater
 cmd /c build-py

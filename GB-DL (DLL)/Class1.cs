@@ -33,7 +33,7 @@ namespace GB_DL
                         client.DownloadFile(url, "config.json");
                     }
                 }
-                Process.Start("CMD.exe", "/c node app > download.cmd && download.cmd && del /f download.cmd && exit").WaitForExit();
+                Process.Start("CMD.exe", "/c app.exe > download.cmd && download.cmd && del /f download.cmd && exit").WaitForExit();
                 Console.WriteLine("Complete.");
                 return;
             }
