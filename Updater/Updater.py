@@ -33,6 +33,7 @@ if sys.argv[1] != tag:
     with open(name, 'wb') as f:
         f.write(r.content)
         f.close()
+    print("Latest Release downloaded.")
 elif sys.argv[1] == tag:
     print("No need to update.")
 else:
