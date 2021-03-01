@@ -1,5 +1,8 @@
 cd js2exe
 cmd /c build-js
+cd "../Url Fetcher"
+cmd /c build-js
+cd ../
 msbuild "Installer\Installer.csproj" -p:Configuration=Release
 cd Updater
 cmd /c build-py
