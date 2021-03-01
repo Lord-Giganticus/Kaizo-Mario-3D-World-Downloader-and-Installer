@@ -2,6 +2,8 @@
 
 ## How to contribute to Kaizo-Mario-3D-World-Downloader-and-Installer
 
+**Please read the [CODE OF CONDUCT](https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/blob/main/CODE_OF_CONDUCT.md) before contributing.**
+
 #### **Did you find a bug?**
 
 * **Do not open up a GitHub issue if the bug is a security vulnerability
