@@ -5,7 +5,7 @@
 #### **Did you find a bug?**
 
 * **Do not open up a GitHub issue if the bug is a security vulnerability
-  in this repo **, and instead join ![Discord](https://img.shields.io/discord/574264880266477587?color=blue&label=Surf%20Games&logo=Discord&logoColor=blue) and or DM me on discord (Lord-Giganticus#7111)
+  in this repo **, and instead join [![Discord](https://img.shields.io/discord/574264880266477587?color=blue&label=Surf%20Games&logo=Discord&logoColor=blue)](https://discord.gg/kMkDuuq) and or DM me on discord (Lord-Giganticus#7111)
   
 #### **Did you write a patch that fixes a bug?**
 
@@ -19,10 +19,10 @@ Changes that are cosmetic in nature and do not add anything substantial to the s
 
 #### **Do you intend to add a new feature or change an existing one?**
 
-* Suggest your change in the ![Discord](https://img.shields.io/discord/574264880266477587?color=blue&label=Surf%20Games&logo=Discord&logoColor=blue) and start writing code.
+* Suggest your change in the [![Discord](https://img.shields.io/discord/574264880266477587?color=blue&label=Surf%20Games&logo=Discord&logoColor=blue)](https://discord.gg/kMkDuuq and start writing code.
 
 * Do not open an issue on GitHub until you have collected positive feedback about the change. GitHub issues are primarily intended for bug reports and fixes.
 
 #### **Do you have questions about the source code?**
 
-* Ask any question about how to use Repo in the ![Discord](https://img.shields.io/discord/574264880266477587?color=blue&label=Surf%20Games&logo=Discord&logoColor=blue).
+* Ask any question about how to use Repo in the [![Discord](https://img.shields.io/discord/574264880266477587?color=blue&label=Surf%20Games&logo=Discord&logoColor=blue)](https://discord.gg/kMkDuuq.
