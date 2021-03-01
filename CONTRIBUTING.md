@@ -7,7 +7,7 @@
 #### **Did you find a bug?**
 
 * **Do not open up a GitHub issue if the bug is a security vulnerability
-  in this repo **, and instead join [![Discord](https://img.shields.io/discord/574264880266477587?color=blue&label=Surf%20Games&logo=Discord&logoColor=blue)](https://discord.gg/kMkDuuq) and or DM me on discord (Lord-Giganticus#7111)
+  in this repo**, and instead join [![Discord](https://img.shields.io/discord/574264880266477587?color=blue&label=Surf%20Games&logo=Discord&logoColor=blue)](https://discord.gg/kMkDuuq) and or DM me on discord (Lord-Giganticus#7111)
   
 #### **Did you write a patch that fixes a bug?**
 
