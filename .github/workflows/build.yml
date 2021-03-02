@@ -51,4 +51,4 @@ jobs:
         title: "Version ${{ github.event.inputs.tag }}"
         files: |
           Release.zip
-          "Kaizo Mario 3D World.exe"
+          Kaizo Mario 3D World.exe
