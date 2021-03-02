@@ -1,0 +1,12 @@
+{
+  "name": "commit-checker",
+  "version": "0.0.0",
+  "description": "Commit Checker",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "@octokit/core": "^3.2.5"
+  }
+}

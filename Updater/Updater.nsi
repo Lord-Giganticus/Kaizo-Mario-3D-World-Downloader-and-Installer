@@ -31,5 +31,6 @@ Section "" ;No components page, name is not important
   ; Put file there
   File "dist\Updater.exe"
   File "Check.cmd"
+  File "commit.txt"
 
 SectionEnd ; end the section
