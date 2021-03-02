@@ -35,6 +35,12 @@ if sys.argv[1] != tag:
         f.close()
     print("Latest Release downloaded.")
 elif sys.argv[1] == tag:
+    choice = int(input("The tags currently match. Do you want to check if it's the current commit of the tag?\n[1]Yes\n[2]No\n"))
+    if choice == 2:
+        print("Ok! I'll exit now!")
+        exit(0)
+    else:
+        pass
     url = 'https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits'
     with urllib.request.urlopen(url) as f:
         html = f.read().decode('utf-8')
