@@ -6,7 +6,5 @@
   "author": {
     "name": ""
   },
-  "dependencies": {
-    "@octokit/core": "^3.2.5"
-  }
+  "dependencies": {}
 }

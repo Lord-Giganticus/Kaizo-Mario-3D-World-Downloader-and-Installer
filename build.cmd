@@ -4,6 +4,7 @@ cd "../Url Fetcher"
 cmd /c build-js
 cd "../Commit Checker"
 cmd /c build-js
+cd ../
 msbuild "Installer\Installer.csproj" -p:Configuration=Release
 cd Updater
 cmd /c build-py
