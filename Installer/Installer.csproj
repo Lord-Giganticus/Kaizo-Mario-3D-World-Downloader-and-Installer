@@ -43,9 +43,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GB-DL">
-      <HintPath>References\GB-DL.dll</HintPath>
-    </Reference>
     <Reference Include="SM3DW-Keys">
       <HintPath>References\SM3DW-Keys.dll</HintPath>
     </Reference>
