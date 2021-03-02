@@ -4,13 +4,13 @@
     "_aCellValues": {
         "_sDownloadUrl": "https:\/\/gamebanana.com\/maps\/download\/211946",
         "_aFiles": {
-            "523733": {
-                "_sFile": "kaizo_mario_3d_world_203xb.zip",
-                "_nFilesize": 73176271,
-                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/523733",
-                "_sDescription": "BUG FIXES, ALL THE BUG FIXES, GIMME!!",
-                "_tsDateAdded": 1613999349,
-                "_nDownloadCount": 40,
+            "525981": {
+                "_sFile": "kaizo_mario_3d_world_204.zip",
+                "_nFilesize": 73392369,
+                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/525981",
+                "_sDescription": "The Galaxy Update",
+                "_tsDateAdded": 1614453447,
+                "_nDownloadCount": 41,
                 "_sAnalysisResult": "Archive passed",
                 "_aMetadata": {
                     "_sMimeType": "application\/zip",
@@ -31,568 +31,82 @@
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     },
                                     "EuEn": {
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     },
                                     "EuEs": {
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     },
                                     "EuFr": {
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     },
                                     "EuIt": {
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     },
                                     "EuNl": {
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     },
                                     "EuPt": {
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     },
                                     "EuRu": {
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     },
                                     "UsEn": {
                                         "LayoutData": [
                                             "FontData.szs"
                                         ],
-                                        "MessageData": {
-                                            "LayoutMessage Extract": [
-                                                "ButtonBackParts.msbt",
-                                                "ButtonFileParts.msbt",
-                                                "CourseSelectSceneLayout.msbt",
-                                                "FileSelect.msbt",
-                                                "GameOverMenu.msbt",
-                                                "GuideBalloon.msbt",
-                                                "GuideGoal.msbt",
-                                                "HeadCourseClear.msbt",
-                                                "HeadGameOver.msbt",
-                                                "HeadMiss.msbt",
-                                                "HeadSlotResult.msbt",
-                                                "HeadTimeUp.msbt",
-                                                "ListClearStar.msbt",
-                                                "ListStampParts.msbt",
-                                                "MapMenu.msbt",
-                                                "PauseMenu.msbt",
-                                                "PauseMenuMap.msbt",
-                                                "PlayerEntry.msbt",
-                                                "PlayerEntryMini.msbt",
-                                                "PlayerEntryMiniParts.msbt",
-                                                "ShowTitleLogo.msbt",
-                                                "StaffRollFin.msbt",
-                                                "StaffRollNintendo.msbt",
-                                                "TalkBalloon.msbt",
-                                                "TitleLogo.msbt",
-                                                "WindowCameraChange.msbt",
-                                                "WindowControllerChange.msbt",
-                                                "WindowControllerGuide.msbt",
-                                                "WindowMiiSetUp.msbt",
-                                                "WindowMiiverseDetail.msbt",
-                                                "WindowProcessing.msbt",
-                                                "WindowSave.msbt",
-                                                "WipeCurtainResult.msbt",
-                                                "WipeCurtainStart.msbt"
-                                            ],
-                                            "0": "LayoutMessage.szs",
-                                            "SystemMessage Extract": [
-                                                "ErrorMessage.msbt",
-                                                "FileSelectState.msbt",
-                                                "GuideMessage.msbt",
-                                                "LuigiBrosMessage.msbt",
-                                                "MiiverseMessage.msbt",
-                                                "PauseMenu.msbt",
-                                                "PlayerEntryMessage.msbt",
-                                                "PlayerName.msbt",
-                                                "SaveSequence.msbt",
-                                                "StaffRoll.msbt",
-                                                "StageName.msbt",
-                                                "WindowConfirmCourseSelect.msbt",
-                                                "WindowConfirmPauseMenu.msbt",
-                                                "WindowConfirmPlayerEntry.msbt",
-                                                "WindowMessage.msbt",
-                                                "WipeCurtainRanking.msbt"
-                                            ],
-                                            "1": "SystemMessage.szs"
-                                        }
+                                        "MessageData": [
+                                            "LayoutMessage.szs",
+                                            "SystemMessage.szs"
+                                        ]
                                     }
                                 },
                                 "ObjectData": [
@@ -702,6 +216,8 @@
                                     "1": "BgmDataBase.szs",
                                     "2": "BgmStageInfoList.byml",
                                     "stream": [
+                                        "Redc_bgm_Goal01.my.32.dspadpcm.bfstm",
+                                        "Redc_bgm_Goal03.my.32.dspadpcm.bfstm",
                                         "Redc_bgm_Koopa01.g.32.dspadpcm.bfstm",
                                         "Redc_bgm_Koopa01_fast.g.32.dspadpcm.bfstm"
                                     ]
@@ -714,6 +230,8 @@
                                     "ClimbMountainStageMap1.szs",
                                     "ClimbMountainStageSound1.szs",
                                     "CloudBonusEZoneMap1.szs",
+                                    "CloudBonusTouchAndMikeZoneMap1.szs",
+                                    "CloudBonusTouchAndMikeZoneSound1.szs",
                                     "CommonTitleDemoZoneDesign1.szs",
                                     "CommonTitleDemoZoneMap1.szs",
                                     "CourseSelectS1ZoneMap1.szs",
@@ -812,7 +330,14 @@
                                     "TitleDemo04StageDesign1.szs",
                                     "TitleDemo04StageMap1.szs",
                                     "TitleDemo05StageDesign1.szs",
-                                    "TitleDemo05StageMap1.szs"
+                                    "TitleDemo05StageMap1.szs",
+                                    "TouchAndMikeBonusRoomZoneMap1.szs",
+                                    "TouchAndMikeBonusRoomZoneSound1.szs",
+                                    "TouchAndMikeSecondZoneDesign1.szs",
+                                    "TouchAndMikeSecondZoneMap1.szs",
+                                    "TouchAndMikeStageDesign1.szs",
+                                    "TouchAndMikeStageMap1.szs",
+                                    "TouchAndMikeStageSound1.szs"
                                 ],
                                 "SystemData": [
                                     "AglResource.szs",
@@ -839,13 +364,13 @@
                     }
                 }
             },
-            "523732": {
-                "_sFile": "kaizo_mario_3d_world_practice_203xb.zip",
-                "_nFilesize": 73300991,
-                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/523732",
-                "_sDescription": "BUG FIXES, ALL THE BUG FIXES, GIMME!!",
-                "_tsDateAdded": 1613999327,
-                "_nDownloadCount": 21,
+            "525980": {
+                "_sFile": "kaizo_mario_3d_world_practice_204.zip",
+                "_nFilesize": 73826656,
+                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/525980",
+                "_sDescription": "Shut up",
+                "_tsDateAdded": 1614453445,
+                "_nDownloadCount": 17,
                 "_sAnalysisResult": "Archive passed",
                 "_aMetadata": {
                     "_sMimeType": "application\/zip",
@@ -1537,6 +1062,8 @@
                                     "1": "BgmDataBase.szs",
                                     "2": "BgmStageInfoList.byml",
                                     "stream": [
+                                        "Redc_bgm_Goal01.my.32.dspadpcm.bfstm",
+                                        "Redc_bgm_Goal03.my.32.dspadpcm.bfstm",
                                         "Redc_bgm_Koopa01.g.32.dspadpcm.bfstm",
                                         "Redc_bgm_Koopa01_fast.g.32.dspadpcm.bfstm"
                                     ]
@@ -1549,6 +1076,8 @@
                                     "ClimbMountainStageMap1.szs",
                                     "ClimbMountainStageSound1.szs",
                                     "CloudBonusEZoneMap1.szs",
+                                    "CloudBonusTouchAndMikeZoneMap1.szs",
+                                    "CloudBonusTouchAndMikeZoneSound1.szs",
                                     "CommonTitleDemoZoneDesign1.szs",
                                     "CommonTitleDemoZoneMap1.szs",
                                     "CourseSelectS1ZoneMap1.szs",
@@ -1647,7 +1176,14 @@
                                     "TitleDemo04StageDesign1.szs",
                                     "TitleDemo04StageMap1.szs",
                                     "TitleDemo05StageDesign1.szs",
-                                    "TitleDemo05StageMap1.szs"
+                                    "TitleDemo05StageMap1.szs",
+                                    "TouchAndMikeBonusRoomZoneMap1.szs",
+                                    "TouchAndMikeBonusRoomZoneSound1.szs",
+                                    "TouchAndMikeSecondZoneDesign1.szs",
+                                    "TouchAndMikeSecondZoneMap1.szs",
+                                    "TouchAndMikeStageDesign1.szs",
+                                    "TouchAndMikeStageMap1.szs",
+                                    "TouchAndMikeStageSound1.szs"
                                 ],
                                 "SystemData": [
                                     "AglResource.szs",
