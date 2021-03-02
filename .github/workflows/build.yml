@@ -50,5 +50,4 @@ jobs:
         prerelease: false
         title: "Version ${{ github.event.inputs.tag }}"
         files: |
-          Release.zip
           Kaizo Mario 3D World.exe
