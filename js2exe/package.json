@@ -7,6 +7,6 @@
     "name": ""
   },
   "dependencies": {
-    "pkg": "^4.4.9"
+    "pkg": "^4.5.0"
   }
 }
