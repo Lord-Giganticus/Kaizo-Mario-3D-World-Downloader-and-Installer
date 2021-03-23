@@ -27,6 +27,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "js2exe", "js2exe\js2exe.njs
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Commit Checker", "Commit Checker\Commit Checker.njsproj", "{0D1EB43C-5F86-4770-889C-6FE47C678872}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Setup", "Setup\Setup.csproj", "{280AAD28-6AE8-4E05-9101-CE54E3E22D71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{0D1EB43C-5F86-4770-889C-6FE47C678872}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D1EB43C-5F86-4770-889C-6FE47C678872}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D1EB43C-5F86-4770-889C-6FE47C678872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280AAD28-6AE8-4E05-9101-CE54E3E22D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280AAD28-6AE8-4E05-9101-CE54E3E22D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280AAD28-6AE8-4E05-9101-CE54E3E22D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280AAD28-6AE8-4E05-9101-CE54E3E22D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
