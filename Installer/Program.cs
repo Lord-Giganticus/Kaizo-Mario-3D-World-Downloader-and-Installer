@@ -10,11 +10,13 @@ namespace Installer
     {
         static void Main()
         {
-            Console.WriteLine("Downloading files");
-            using (var client = new WebClient())
+            if (!File.Exists("curl.exe"))
             {
-                client.DownloadFile("https://gamebanana.com/maps/211946?api=FilesModule", "config.json");
+                ISO_Builder.Classes.Manager.ExtractRecourse extract = new ISO_Builder.Classes.Manager.ExtractRecourse();
+                extract.ViaBytes("curl.exe",Properties.Resources.curl);
             }
+            Console.WriteLine("Downloading files");
+            Process.Start("CMD.exe", "/c curl -k -L https://gamebanana.com/maps/211946?api=FilesModule -o config.json").WaitForExit();
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
             Process.Start("CMD.exe", "/c app.exe > download.cmd && download.cmd && del /f download.cmd && exit").WaitForExit();
             Console.WriteLine("Extracting zips");
