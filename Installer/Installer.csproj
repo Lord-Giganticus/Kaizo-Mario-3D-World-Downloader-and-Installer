@@ -82,6 +82,7 @@
     <None Include="Practice.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\JS\config.json" />
     <None Include="SdCafiine-Normal-EUR.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -111,6 +112,8 @@
     <Content Include="Practice.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\JS\URL.js" />
+    <Content Include="Resources\node.exe" />
     <None Include="Resources\curl.exe" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace ISO_Builder.Classes
+namespace Installer.Classes
 {
     public class Manager
     {
