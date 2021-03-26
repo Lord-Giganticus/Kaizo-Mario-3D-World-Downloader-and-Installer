@@ -1,5 +1,163 @@
 [
   {
+    "sha": "59275e38b6fb825b2c88b44f96b1e37ccfae3364",
+    "node_id": "MDY6Q29tbWl0MzQxNDIxNjg2OjU5Mjc1ZTM4YjZmYjgyNWIyYzg4YjQ0Zjk2YjFlMzdjY2ZhZTMzNjQ=",
+    "commit": {
+      "author": {
+        "name": "Lord-Giganticus",
+        "email": "mrubins64@gmail.com",
+        "date": "2021-03-26T04:17:54Z"
+      },
+      "committer": {
+        "name": "Lord-Giganticus",
+        "email": "mrubins64@gmail.com",
+        "date": "2021-03-26T04:17:54Z"
+      },
+      "message": "Update build",
+      "tree": {
+        "sha": "ce8ed3d2d72cefd77f285eaee443f05bed84e6e6",
+        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/git/trees/ce8ed3d2d72cefd77f285eaee443f05bed84e6e6"
+      },
+      "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/git/commits/59275e38b6fb825b2c88b44f96b1e37ccfae3364",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/59275e38b6fb825b2c88b44f96b1e37ccfae3364",
+    "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/59275e38b6fb825b2c88b44f96b1e37ccfae3364",
+    "comments_url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/59275e38b6fb825b2c88b44f96b1e37ccfae3364/comments",
+    "author": {
+      "login": "Lord-Giganticus",
+      "id": 70081529,
+      "node_id": "MDQ6VXNlcjcwMDgxNTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70081529?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Lord-Giganticus",
+      "html_url": "https://github.com/Lord-Giganticus",
+      "followers_url": "https://api.github.com/users/Lord-Giganticus/followers",
+      "following_url": "https://api.github.com/users/Lord-Giganticus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Lord-Giganticus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Lord-Giganticus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Lord-Giganticus/subscriptions",
+      "organizations_url": "https://api.github.com/users/Lord-Giganticus/orgs",
+      "repos_url": "https://api.github.com/users/Lord-Giganticus/repos",
+      "events_url": "https://api.github.com/users/Lord-Giganticus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Lord-Giganticus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Lord-Giganticus",
+      "id": 70081529,
+      "node_id": "MDQ6VXNlcjcwMDgxNTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70081529?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Lord-Giganticus",
+      "html_url": "https://github.com/Lord-Giganticus",
+      "followers_url": "https://api.github.com/users/Lord-Giganticus/followers",
+      "following_url": "https://api.github.com/users/Lord-Giganticus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Lord-Giganticus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Lord-Giganticus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Lord-Giganticus/subscriptions",
+      "organizations_url": "https://api.github.com/users/Lord-Giganticus/orgs",
+      "repos_url": "https://api.github.com/users/Lord-Giganticus/repos",
+      "events_url": "https://api.github.com/users/Lord-Giganticus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Lord-Giganticus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5f546da0a4244d1f36431db30b698227a075c81d",
+        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/5f546da0a4244d1f36431db30b698227a075c81d",
+        "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/5f546da0a4244d1f36431db30b698227a075c81d"
+      }
+    ]
+  },
+  {
+    "sha": "5f546da0a4244d1f36431db30b698227a075c81d",
+    "node_id": "MDY6Q29tbWl0MzQxNDIxNjg2OjVmNTQ2ZGEwYTQyNDRkMWYzNjQzMWRiMzBiNjk4MjI3YTA3NWM4MWQ=",
+    "commit": {
+      "author": {
+        "name": "Lord-Giganticus",
+        "email": "mrubins64@gmail.com",
+        "date": "2021-03-26T04:16:29Z"
+      },
+      "committer": {
+        "name": "Lord-Giganticus",
+        "email": "mrubins64@gmail.com",
+        "date": "2021-03-26T04:16:29Z"
+      },
+      "message": "fix the zip bug",
+      "tree": {
+        "sha": "1213f464e06c525c992522e85fb19d3bcddcd88c",
+        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/git/trees/1213f464e06c525c992522e85fb19d3bcddcd88c"
+      },
+      "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/git/commits/5f546da0a4244d1f36431db30b698227a075c81d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/5f546da0a4244d1f36431db30b698227a075c81d",
+    "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/5f546da0a4244d1f36431db30b698227a075c81d",
+    "comments_url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/5f546da0a4244d1f36431db30b698227a075c81d/comments",
+    "author": {
+      "login": "Lord-Giganticus",
+      "id": 70081529,
+      "node_id": "MDQ6VXNlcjcwMDgxNTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70081529?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Lord-Giganticus",
+      "html_url": "https://github.com/Lord-Giganticus",
+      "followers_url": "https://api.github.com/users/Lord-Giganticus/followers",
+      "following_url": "https://api.github.com/users/Lord-Giganticus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Lord-Giganticus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Lord-Giganticus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Lord-Giganticus/subscriptions",
+      "organizations_url": "https://api.github.com/users/Lord-Giganticus/orgs",
+      "repos_url": "https://api.github.com/users/Lord-Giganticus/repos",
+      "events_url": "https://api.github.com/users/Lord-Giganticus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Lord-Giganticus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "Lord-Giganticus",
+      "id": 70081529,
+      "node_id": "MDQ6VXNlcjcwMDgxNTI5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70081529?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Lord-Giganticus",
+      "html_url": "https://github.com/Lord-Giganticus",
+      "followers_url": "https://api.github.com/users/Lord-Giganticus/followers",
+      "following_url": "https://api.github.com/users/Lord-Giganticus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Lord-Giganticus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Lord-Giganticus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Lord-Giganticus/subscriptions",
+      "organizations_url": "https://api.github.com/users/Lord-Giganticus/orgs",
+      "repos_url": "https://api.github.com/users/Lord-Giganticus/repos",
+      "events_url": "https://api.github.com/users/Lord-Giganticus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Lord-Giganticus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "830887529ec9d26fedfeb50b43205ff622b2107f",
+        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/830887529ec9d26fedfeb50b43205ff622b2107f",
+        "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/830887529ec9d26fedfeb50b43205ff622b2107f"
+      }
+    ]
+  },
+  {
     "sha": "830887529ec9d26fedfeb50b43205ff622b2107f",
     "node_id": "MDY6Q29tbWl0MzQxNDIxNjg2OjgzMDg4NzUyOWVjOWQyNmZlZGZlYjUwYjQzMjA1ZmY2MjJiMjEwN2Y=",
     "commit": {
@@ -2208,169 +2366,6 @@
         "sha": "0f8046ad823385be9278e22a29b2b6e5ea6599fd",
         "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/0f8046ad823385be9278e22a29b2b6e5ea6599fd",
         "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/0f8046ad823385be9278e22a29b2b6e5ea6599fd"
-      }
-    ]
-  },
-  {
-    "sha": "0f8046ad823385be9278e22a29b2b6e5ea6599fd",
-    "node_id": "MDY6Q29tbWl0MzQxNDIxNjg2OjBmODA0NmFkODIzMzg1YmU5Mjc4ZTIyYTI5YjJiNmU1ZWE2NTk5ZmQ=",
-    "commit": {
-      "author": {
-        "name": "Lord-Giganticus",
-        "email": "mrubins64@gmail.com",
-        "date": "2021-03-01T20:55:29Z"
-      },
-      "committer": {
-        "name": "Lord-Giganticus",
-        "email": "mrubins64@gmail.com",
-        "date": "2021-03-01T20:55:29Z"
-      },
-      "message": "Merge branch 'main' of https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer",
-      "tree": {
-        "sha": "88af6104ac4edef6e5c4b6f3fe1e23a489d0e52b",
-        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/git/trees/88af6104ac4edef6e5c4b6f3fe1e23a489d0e52b"
-      },
-      "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/git/commits/0f8046ad823385be9278e22a29b2b6e5ea6599fd",
-      "comment_count": 0,
-      "verification": {
-        "verified": false,
-        "reason": "unsigned",
-        "signature": null,
-        "payload": null
-      }
-    },
-    "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/0f8046ad823385be9278e22a29b2b6e5ea6599fd",
-    "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/0f8046ad823385be9278e22a29b2b6e5ea6599fd",
-    "comments_url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/0f8046ad823385be9278e22a29b2b6e5ea6599fd/comments",
-    "author": {
-      "login": "Lord-Giganticus",
-      "id": 70081529,
-      "node_id": "MDQ6VXNlcjcwMDgxNTI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70081529?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Lord-Giganticus",
-      "html_url": "https://github.com/Lord-Giganticus",
-      "followers_url": "https://api.github.com/users/Lord-Giganticus/followers",
-      "following_url": "https://api.github.com/users/Lord-Giganticus/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Lord-Giganticus/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Lord-Giganticus/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Lord-Giganticus/subscriptions",
-      "organizations_url": "https://api.github.com/users/Lord-Giganticus/orgs",
-      "repos_url": "https://api.github.com/users/Lord-Giganticus/repos",
-      "events_url": "https://api.github.com/users/Lord-Giganticus/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Lord-Giganticus/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "committer": {
-      "login": "Lord-Giganticus",
-      "id": 70081529,
-      "node_id": "MDQ6VXNlcjcwMDgxNTI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70081529?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Lord-Giganticus",
-      "html_url": "https://github.com/Lord-Giganticus",
-      "followers_url": "https://api.github.com/users/Lord-Giganticus/followers",
-      "following_url": "https://api.github.com/users/Lord-Giganticus/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Lord-Giganticus/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Lord-Giganticus/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Lord-Giganticus/subscriptions",
-      "organizations_url": "https://api.github.com/users/Lord-Giganticus/orgs",
-      "repos_url": "https://api.github.com/users/Lord-Giganticus/repos",
-      "events_url": "https://api.github.com/users/Lord-Giganticus/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Lord-Giganticus/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "parents": [
-      {
-        "sha": "bb8694f0a791b637747dcba11f62a1bd8f1c96e8",
-        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/bb8694f0a791b637747dcba11f62a1bd8f1c96e8",
-        "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/bb8694f0a791b637747dcba11f62a1bd8f1c96e8"
-      },
-      {
-        "sha": "8f24b6e8805aad801d0d4d7dbde9b7deb0860756",
-        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/8f24b6e8805aad801d0d4d7dbde9b7deb0860756",
-        "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/8f24b6e8805aad801d0d4d7dbde9b7deb0860756"
-      }
-    ]
-  },
-  {
-    "sha": "bb8694f0a791b637747dcba11f62a1bd8f1c96e8",
-    "node_id": "MDY6Q29tbWl0MzQxNDIxNjg2OmJiODY5NGYwYTc5MWI2Mzc3NDdkY2JhMTFmNjJhMWJkOGYxYzk2ZTg=",
-    "commit": {
-      "author": {
-        "name": "Lord-Giganticus",
-        "email": "mrubins64@gmail.com",
-        "date": "2021-03-01T20:55:05Z"
-      },
-      "committer": {
-        "name": "Lord-Giganticus",
-        "email": "mrubins64@gmail.com",
-        "date": "2021-03-01T20:55:05Z"
-      },
-      "message": "update README",
-      "tree": {
-        "sha": "30ae7ede8f49f1e09ff4365e8b74aff6a2270fbf",
-        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/git/trees/30ae7ede8f49f1e09ff4365e8b74aff6a2270fbf"
-      },
-      "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/git/commits/bb8694f0a791b637747dcba11f62a1bd8f1c96e8",
-      "comment_count": 0,
-      "verification": {
-        "verified": false,
-        "reason": "unsigned",
-        "signature": null,
-        "payload": null
-      }
-    },
-    "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/bb8694f0a791b637747dcba11f62a1bd8f1c96e8",
-    "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/bb8694f0a791b637747dcba11f62a1bd8f1c96e8",
-    "comments_url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/bb8694f0a791b637747dcba11f62a1bd8f1c96e8/comments",
-    "author": {
-      "login": "Lord-Giganticus",
-      "id": 70081529,
-      "node_id": "MDQ6VXNlcjcwMDgxNTI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70081529?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Lord-Giganticus",
-      "html_url": "https://github.com/Lord-Giganticus",
-      "followers_url": "https://api.github.com/users/Lord-Giganticus/followers",
-      "following_url": "https://api.github.com/users/Lord-Giganticus/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Lord-Giganticus/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Lord-Giganticus/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Lord-Giganticus/subscriptions",
-      "organizations_url": "https://api.github.com/users/Lord-Giganticus/orgs",
-      "repos_url": "https://api.github.com/users/Lord-Giganticus/repos",
-      "events_url": "https://api.github.com/users/Lord-Giganticus/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Lord-Giganticus/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "committer": {
-      "login": "Lord-Giganticus",
-      "id": 70081529,
-      "node_id": "MDQ6VXNlcjcwMDgxNTI5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/70081529?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Lord-Giganticus",
-      "html_url": "https://github.com/Lord-Giganticus",
-      "followers_url": "https://api.github.com/users/Lord-Giganticus/followers",
-      "following_url": "https://api.github.com/users/Lord-Giganticus/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Lord-Giganticus/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Lord-Giganticus/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Lord-Giganticus/subscriptions",
-      "organizations_url": "https://api.github.com/users/Lord-Giganticus/orgs",
-      "repos_url": "https://api.github.com/users/Lord-Giganticus/repos",
-      "events_url": "https://api.github.com/users/Lord-Giganticus/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Lord-Giganticus/received_events",
-      "type": "User",
-      "site_admin": false
-    },
-    "parents": [
-      {
-        "sha": "476dd1af147702880c32b5cbe4c621345e01d293",
-        "url": "https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commits/476dd1af147702880c32b5cbe4c621345e01d293",
-        "html_url": "https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/commit/476dd1af147702880c32b5cbe4c621345e01d293"
       }
     ]
   }
