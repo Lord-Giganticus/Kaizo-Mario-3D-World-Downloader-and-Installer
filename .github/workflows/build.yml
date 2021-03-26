@@ -26,7 +26,8 @@ jobs:
       with:
         vs-version: '16.5'
     - name: Install cURL
-      run: choco install curl --acceptlicense --confirm
+      run: choco install curl --acceptlicense --confirm && choco install nodejs --acceptlicense --confirm
+      shell: cmd
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
