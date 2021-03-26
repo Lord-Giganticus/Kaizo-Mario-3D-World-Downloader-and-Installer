@@ -1,7 +1,5 @@
 cd js2exe
 cmd /c build-js
-cd "../Url Fetcher"
-cmd /c build-js
 cd "../Commit Checker"
 cmd /c build-js
 cd ../

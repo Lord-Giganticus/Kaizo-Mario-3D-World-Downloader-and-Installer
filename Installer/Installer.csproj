@@ -82,9 +82,7 @@
     <None Include="Practice.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\JS\config.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Resources\JS\config.json" />
     <None Include="SdCafiine-Normal-EUR.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -105,15 +103,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Normal.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Practice.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\7z.exe" />
     <Content Include="Resources\JS\URL.js" />
     <Content Include="Resources\node.exe" />
     <None Include="Resources\curl.exe" />
