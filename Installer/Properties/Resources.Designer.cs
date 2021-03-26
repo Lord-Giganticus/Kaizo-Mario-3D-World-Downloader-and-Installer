@@ -81,16 +81,6 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] node {
-            get {
-                object obj = ResourceManager.GetObject("node", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to // Made by Lord-Giganticus
         ///
         ///const { _aCellValues } = require(&apos;./config.json&apos;);

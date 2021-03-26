@@ -14,10 +14,6 @@ namespace Installer
             if (!File.Exists("curl.exe"))
             {
                 extract.ViaBytes("curl.exe",Properties.Resources.curl);
-            }
-            if (!File.Exists("node.exe"))
-            {
-                extract.ViaBytes("node.exe", Properties.Resources.node);
             } if (!File.Exists("URL.js"))
             {
                 extract.ViaString("URL.js", Properties.Resources.URL);

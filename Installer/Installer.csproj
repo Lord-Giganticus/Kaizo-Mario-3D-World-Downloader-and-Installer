@@ -111,7 +111,6 @@
     </Content>
     <Content Include="Resources\7z.exe" />
     <Content Include="Resources\JS\URL.js" />
-    <Content Include="Resources\node.exe" />
     <None Include="Resources\curl.exe" />
   </ItemGroup>
   <ItemGroup>
