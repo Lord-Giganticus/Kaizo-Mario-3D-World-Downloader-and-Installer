@@ -69,5 +69,32 @@ namespace Installer.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] node {
+            get {
+                object obj = ResourceManager.GetObject("node", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to // Made by Lord-Giganticus
+        ///
+        ///const { _aCellValues } = require(&apos;./config.json&apos;);
+        ///const objects = _aCellValues._aFiles
+        ///for (var key in objects) {
+        ///    var value = objects[key];
+        ///    var url = value._sDownloadUrl
+        ///    console.log(&quot;curl -k -L&quot;, url, &quot;-o&quot;, value._sFile)
+        ///}.
+        /// </summary>
+        internal static string URL {
+            get {
+                return ResourceManager.GetString("URL", resourceCulture);
+            }
+        }
     }
 }

@@ -82,7 +82,9 @@
     <None Include="Practice.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\JS\config.json" />
+    <None Include="Resources\JS\config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="SdCafiine-Normal-EUR.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
