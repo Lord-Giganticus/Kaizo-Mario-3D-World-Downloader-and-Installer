@@ -81,15 +81,33 @@ namespace Installer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to curl -k -L https://gamebanana.com/maps/download/211946?api=FilesModule -o config.json
+        ///node url.
+        /// </summary>
+        internal static string Run {
+            get {
+                return ResourceManager.GetString("Run", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to // Made by Lord-Giganticus
-        ///
-        ///const { _aCellValues } = require(&apos;./config.json&apos;);
-        ///const objects = _aCellValues._aFiles
-        ///for (var key in objects) {
-        ///    var value = objects[key];
+        ///const fs = require(&apos;fs&apos;);
+        ///const data = require(&apos;./config.json&apos;)
+        ///var files = data._aCellValues._aFiles
+        ///var line = &quot;&quot;
+        ///for (var key in files) {
+        ///    var value = files[key];
         ///    var url = value._sDownloadUrl
-        ///    console.log(&quot;curl -k -L&quot;, url, &quot;-o&quot;, value._sFile)
-        ///}.
+        ///    line = line + &quot;curl -k -L &quot;+ url+ &quot; -o &quot;+ value._sFile + &quot;\n&quot; 
+        ///}
+        ///fs.writeFile(&apos;download.cmd&apos;, line, err =&gt; {
+        ///    if (err) {
+        ///        console.error(err)
+        ///        return
+        ///    }
+        ///    return console.log(&quot;Complete.&quot;);
+        ///}).
         /// </summary>
         internal static string URL {
             get {

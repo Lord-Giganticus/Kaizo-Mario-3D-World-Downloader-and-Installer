@@ -73,6 +73,9 @@
     <None Include="CEMU-Practice.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="KM3DW.nsi">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Normal.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -83,6 +86,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Resources\JS\config.json" />
+    <None Include="Resources\JS\Run.cmd" />
     <None Include="SdCafiine-Normal-EUR.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
