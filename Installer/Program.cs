@@ -11,15 +11,9 @@ namespace Installer
         static void Main()
         {
             Classes.Manager.ExtractRecourse extract = new Classes.Manager.ExtractRecourse();
-            if (!File.Exists("curl.exe"))
-            {
-                extract.ViaBytes("curl.exe",Properties.Resources.curl);
-            } if (!File.Exists("URL.js"))
+            if (!File.Exists("URL.js"))
             {
                 extract.ViaString("URL.js", Properties.Resources.URL);
-            } if (!File.Exists("7z.exe"))
-            {
-                extract.ViaBytes("7z.exe", Properties.Resources._7z);
             } if (!File.Exists("Run.cmd"))
             {
                 extract.ViaString("Run.cmd", Properties.Resources.Run);

@@ -113,9 +113,7 @@
     <Content Include="Practice.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\7z.exe" />
     <Content Include="Resources\JS\URL.js" />
-    <None Include="Resources\curl.exe" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

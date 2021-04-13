@@ -61,26 +61,6 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] _7z {
-            get {
-                object obj = ResourceManager.GetObject("_7z", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] curl {
-            get {
-                object obj = ResourceManager.GetObject("curl", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to curl -k -L https://gamebanana.com/maps/download/211946?api=FilesModule -o config.json
         ///node url.
         /// </summary>
