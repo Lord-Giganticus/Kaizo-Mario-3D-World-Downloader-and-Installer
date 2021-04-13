@@ -3,29 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamebanana Downloader", "Gamebanana Downloader\Gamebanana Downloader.csproj", "{42827912-872F-47AE-A3CA-AD6FF479C5E4}"
-	ProjectSection(ProjectDependencies) = postProject
-		{54456C2F-92BF-4E4D-8783-902B2E72218F} = {54456C2F-92BF-4E4D-8783-902B2E72218F}
-	EndProjectSection
-EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Url Fetcher", "Url Fetcher\Url Fetcher.njsproj", "{54456C2F-92BF-4E4D-8783-902B2E72218F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{613C5D73-7895-4827-9506-0B6B7307AF67}"
-	ProjectSection(ProjectDependencies) = postProject
-		{54456C2F-92BF-4E4D-8783-902B2E72218F} = {54456C2F-92BF-4E4D-8783-902B2E72218F}
-		{9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65} = {9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GB-DL (DLL)", "GB-DL (DLL)\GB-DL (DLL).csproj", "{9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65}"
-	ProjectSection(ProjectDependencies) = postProject
-		{54456C2F-92BF-4E4D-8783-902B2E72218F} = {54456C2F-92BF-4E4D-8783-902B2E72218F}
-	EndProjectSection
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Updater", "Updater\Updater.pyproj", "{0DAE217B-EAB8-4A7D-97EC-48774EAA6038}"
-EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "js2exe", "js2exe\js2exe.njsproj", "{9674BCCD-8268-47B4-94E6-DEB216B835E5}"
-EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Commit Checker", "Commit Checker\Commit Checker.njsproj", "{0D1EB43C-5F86-4770-889C-6FE47C678872}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Setup", "Setup\Setup.csproj", "{280AAD28-6AE8-4E05-9101-CE54E3E22D71}"
 EndProject
@@ -35,32 +15,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{42827912-872F-47AE-A3CA-AD6FF479C5E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42827912-872F-47AE-A3CA-AD6FF479C5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42827912-872F-47AE-A3CA-AD6FF479C5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42827912-872F-47AE-A3CA-AD6FF479C5E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54456C2F-92BF-4E4D-8783-902B2E72218F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54456C2F-92BF-4E4D-8783-902B2E72218F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54456C2F-92BF-4E4D-8783-902B2E72218F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54456C2F-92BF-4E4D-8783-902B2E72218F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{613C5D73-7895-4827-9506-0B6B7307AF67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{613C5D73-7895-4827-9506-0B6B7307AF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{613C5D73-7895-4827-9506-0B6B7307AF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{613C5D73-7895-4827-9506-0B6B7307AF67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9658DEA5-F37B-43AC-87B9-8FA6E9A2FD65}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0DAE217B-EAB8-4A7D-97EC-48774EAA6038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0DAE217B-EAB8-4A7D-97EC-48774EAA6038}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9674BCCD-8268-47B4-94E6-DEB216B835E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9674BCCD-8268-47B4-94E6-DEB216B835E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9674BCCD-8268-47B4-94E6-DEB216B835E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9674BCCD-8268-47B4-94E6-DEB216B835E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0D1EB43C-5F86-4770-889C-6FE47C678872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D1EB43C-5F86-4770-889C-6FE47C678872}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D1EB43C-5F86-4770-889C-6FE47C678872}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D1EB43C-5F86-4770-889C-6FE47C678872}.Release|Any CPU.Build.0 = Release|Any CPU
 		{280AAD28-6AE8-4E05-9101-CE54E3E22D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{280AAD28-6AE8-4E05-9101-CE54E3E22D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{280AAD28-6AE8-4E05-9101-CE54E3E22D71}.Release|Any CPU.ActiveCfg = Release|Any CPU

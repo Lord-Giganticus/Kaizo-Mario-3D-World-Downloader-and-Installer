@@ -1,23 +1,28 @@
 {
     "_aAdditionalViewVariables": [],
-    "_sViewTemplate": "?>\n<ul>\n<? foreach($d[\"_aFiles\"] as $_idFileRow => $_aFile): ?>\n<li>\n<div class=\"FileInfo\">\n<span>\n<code><?= $_aFile[\"_sFile\"] ?><\/code>\n<?= \\gamebanana\\eColoredDate($_aFile[\"_tsDateAdded\"]) ?>\n<? if (!empty($_aFile[\"_aMetadata\"])\n&& !empty($_aFile[\"_aMetadata\"][\"_aArchiveFileTree\"])\n&& strstr(strtolower(implode(\" \",$_aFile[\"_aMetadata\"][\"_aArchiveFileTree\"])),\".exe\")): ?>\n<stateLabel class=\"RedColor\">Executable<\/stateLabel>\n<div class=\"BananaTip\">\n<div class=\"Title\">Warning<\/div>\nThis file is or contains an executable\n<\/div>\n<? endif ?>\n<\/span>\n<? if (isset($_aFile[\"_sDescription\"]) && !empty($_aFile[\"_sDescription\"])): ?>\n<small class=\"Description\" title=\"Description\">\n<matIcon>insert_drive_file<\/matIcon>\n<?= $_aFile[\"_sDescription\"] ?>\n<\/small>\n<? endif ?>\n<\/div>\n<div class=\"DownloadOptions\">\n<? if (!empty($d[\"_aModManagerIntegrations\"])\n&& isset($d[\"_aModManagerIntegrations\"][$_idFileRow])): ?>\n<? foreach ($d[\"_aModManagerIntegrations\"][$_idFileRow] as $_aModManagerIntegrator): ?>\n<a href=\"<?= $_aModManagerIntegrator[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"<?= $_aModManagerIntegrator[\"_sIconClasses\"] ?>\"><\/spriteIcon>\n<? if (isset($_aModManagerIntegrator[\"_sPlatform\"])): ?>\n<spriteIcon title=\"<?= $_aModManagerIntegrator[\"_sPlatform\"] ?>\" class=\"PlatformIcon <?= $_aModManagerIntegrator[\"_sPlatform\"] ?>Icon\"><\/spriteIcon>\n<? endif ?>\n<span>\n<?= $_aModManagerIntegrator[\"_sInstallerName\"] ?>\n<small>1-Click Install<\/small>\n<\/span>\n<\/a>\n<div class=\"BananaTip\">\n<div class=\"Title\">1-Click Install<\/div>\nInstall this Map quickly and easily\nwith <a href=\"<?= $_aModManagerIntegrator[\"_sInstallerUrl\"] ?>\">\n<?= $_aModManagerIntegrator[\"_sInstallerName\"] ?>\n<\/a>\n<? if (isset($_aModManagerIntegrator[\"_sPlatform\"])): ?>\nfor <?= $_aModManagerIntegrator[\"_sPlatform\"] ?>\n<? endif ?>\n<\/div>\n<? endforeach ?>\n<? endif ?>\n<? if (\\gamebanana\\userid() > 0): ?>\n<a class=\"GreenColor\" href=\"<?= $_aFile[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"MiscIcon SmallManualDownloadIcon\"><\/spriteIcon>\n<span>Download<\/span>\n<\/a>\n<a href=\"<?= $d[\"_sDownloadUrl\"] ?>\" class=\"FileInfoLink\">\n<spriteIcon class=\"MiscIcon FileInfoIcon\"><\/spriteIcon>\n<span>File Info<\/span>\n<\/a>\n<? else: ?>\n<a class=\"GreenColor\" href=\"<?= $d[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"MiscIcon SmallManualDownloadIcon\"><\/spriteIcon>\n<span>Manual Download<\/span>\n<\/a>\n<? endif ?>\n<\/div>\n<\/li>\n<? endforeach ?>\n<\/ul>\n<?",
+    "_sViewTemplate": "?>\n<ul>\n<? foreach($d[\"_aFiles\"] as $_idFileRow => $_aFile): ?>\n<li>\n<div class=\"FileInfo\">\n<span>\n<code><?= $_aFile[\"_sFile\"] ?><\/code>\n<? if (!empty($_aFile[\"_aMetadata\"])\n&& !empty($_aFile[\"_aMetadata\"][\"_aArchiveFileTree\"])\n&& strstr(strtolower(implode(\" \",$_aFile[\"_aMetadata\"][\"_aArchiveFileTree\"])),\".exe\")): ?>\n<stateLabel class=\"RedColor\">Executable<\/stateLabel>\n<div class=\"BananaTip\">\n<div class=\"Title\">Warning<\/div>\nThis file is or contains an executable.\n<\/div>\n<? endif ?>\n<\/span>\n<? if (isset($_aFile[\"_sDescription\"]) && !empty($_aFile[\"_sDescription\"])): ?>\n<small class=\"Description\" title=\"Description\">\n<matIcon>insert_drive_file<\/matIcon>\n<?= $_aFile[\"_sDescription\"] ?>\n<\/small>\n<? endif ?>\n<small class=\"Info\">\n<wrapper>\n<matIcon>access_time<\/matIcon>\n<?= \\gamebanana\\eColoredDate($_aFile[\"_tsDateAdded\"]) ?>\n<\/wrapper>\n<wrapper title=\"Downloads\">\n<matIcon>cloud_download<\/matIcon>\n<itemCount>\n<?= number_format($_aFile[\"_nDownloadCount\"]) ?>\n<\/itemCount>\n<\/wrapper>\n<? if (!empty($_aFile[\"_nFilesize\"])): ?>\n<wrapper title=\"Filesize\">\n<matIcon>save<\/matIcon>\n<itemCount>\n<?= number_format($_aFile[\"_nFilesize\"]) ?> bytes\n<\/itemCount>\n<itemCount>\n(<?= size_format($_aFile[\"_nFilesize\"]) ?>)\n<\/itemCount>\n<\/wrapper>\n<? endif ?>\n<\/small>\n<\/div>\n<div class=\"DownloadOptions\">\n<? if (!empty($d[\"_aModManagerIntegrations\"])\n&& isset($d[\"_aModManagerIntegrations\"][$_idFileRow])): ?>\n<? foreach ($d[\"_aModManagerIntegrations\"][$_idFileRow] as $_aModManagerIntegrator): ?>\n<a href=\"<?= $_aModManagerIntegrator[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"<?= $_aModManagerIntegrator[\"_sIconClasses\"] ?>\"><\/spriteIcon>\n<? if (isset($_aModManagerIntegrator[\"_sPlatform\"])): ?>\n<spriteIcon title=\"<?= $_aModManagerIntegrator[\"_sPlatform\"] ?>\" class=\"PlatformIcon <?= $_aModManagerIntegrator[\"_sPlatform\"] ?>Icon\"><\/spriteIcon>\n<? endif ?>\n<span>\n<?= $_aModManagerIntegrator[\"_sInstallerName\"] ?>\n<small>1-Click Install<\/small>\n<\/span>\n<\/a>\n<div class=\"BananaTip\">\n<div class=\"Title\">1-Click Install<\/div>\nInstall this Map quickly and easily\nwith <a href=\"<?= $_aModManagerIntegrator[\"_sInstallerUrl\"] ?>\">\n<?= $_aModManagerIntegrator[\"_sInstallerName\"] ?>\n<\/a>\n<? if (isset($_aModManagerIntegrator[\"_sPlatform\"])): ?>\nfor <?= $_aModManagerIntegrator[\"_sPlatform\"] ?>\n<? endif ?>\n<\/div>\n<? endforeach ?>\n<? endif ?>\n<a class=\"GreenColor\" href=\"<?= $_aFile[\"_sDownloadUrl\"] ?>\">\n<spriteIcon class=\"MiscIcon SmallManualDownloadIcon\"><\/spriteIcon>\n<span>Download<\/span>\n<\/a>\n<\/div>\n<\/li>\n<? endforeach ?>\n<\/ul>\n<?",
     "_aCellValues": {
-        "_sDownloadUrl": "https:\/\/gamebanana.com\/maps\/download\/211946",
         "_aFiles": {
-            "528548": {
-                "_sFile": "kaizo_mario_3d_world_204a.zip",
-                "_nFilesize": 73414806,
-                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/528548",
-                "_sDescription": "Bug Fixes",
-                "_tsDateAdded": 1614928271,
-                "_nDownloadCount": 120,
+            "543972": {
+                "_idRow": "543972",
+                "_sFile": "kaizo_mario_3d_world_269.zip",
+                "_nFilesize": 76452505,
+                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/543972",
+                "_sDescription": "When The",
+                "_tsDateAdded": 1617280245,
+                "_nDownloadCount": 55,
                 "_sAnalysisResult": "Archive passed",
                 "_aMetadata": {
                     "_sMimeType": "application\/zip",
                     "_aArchiveFileTree": {
-                        "0": "KM3D Banner.png",
-                        "1": "KM3D Icon.png",
-                        "2": "KM3D Logo.png",
+                        "Extras": [
+                            "KM3D Banner.png",
+                            "KM3D Icon.png",
+                            "KM3D Logo.png",
+                            "KM3DW - Mystery House Mania.mp3",
+                            "KM3DW - Yummy Runny (Star Rush).mp3",
+                            "Update 2.0.png"
+                        ],
                         "Kaizo Mario 3D World": {
                             "content": {
                                 "LayoutData": [
@@ -110,6 +115,12 @@
                                     }
                                 },
                                 "ObjectData": [
+                                    "BlockAssistLeaf.szs",
+                                    "BlockBrick.szs",
+                                    "BlockEmpty.szs",
+                                    "BlockHard.szs",
+                                    "BlockQuestion.szs",
+                                    "BlockQuestionLong.szs",
                                     "Bomb.szs",
                                     "BombBound.szs",
                                     "BombBoundGenerator.szs",
@@ -322,6 +333,9 @@
                                     "RouletteRoomZoneDesign1.szs",
                                     "RouletteRoomZoneMap1.szs",
                                     "RouletteRoomZoneSound1.szs",
+                                    "ShadowTunnelStageDesign1.szs",
+                                    "ShadowTunnelStageMap1.szs",
+                                    "ShadowTunnelStageSound1.szs",
                                     "SideWaveDesertStageDesign1.szs",
                                     "SideWaveDesertStageMap1.szs",
                                     "SideWaveDesertStageSound1.szs",
@@ -365,25 +379,31 @@
                                 "iconTex.tga",
                                 "meta.xml"
                             ]
-                        },
-                        "3": "Update 2.0.png"
+                        }
                     }
-                }
+                },
+                "_bContainsExe": false
             },
-            "528549": {
-                "_sFile": "kaizo_mario_3d_world_practice_204a.zip",
-                "_nFilesize": 73849254,
-                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/528549",
-                "_sDescription": "Fixes Bug",
-                "_tsDateAdded": 1614928272,
-                "_nDownloadCount": 46,
+            "543971": {
+                "_idRow": "543971",
+                "_sFile": "kaizo_mario_3d_world_practice_269.zip",
+                "_nFilesize": 76887525,
+                "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/543971",
+                "_sDescription": "Imposter is Kaizo",
+                "_tsDateAdded": 1617280245,
+                "_nDownloadCount": 21,
                 "_sAnalysisResult": "Archive passed",
                 "_aMetadata": {
                     "_sMimeType": "application\/zip",
                     "_aArchiveFileTree": {
-                        "0": "KM3Dpm Banner.png",
-                        "1": "KM3Dpm Icon.png",
-                        "2": "KM3Dpm Logo.png",
+                        "Extras": [
+                            "KM3DW - Mystery House Mania.mp3",
+                            "KM3DW - Yummy Runny (Star Rush).mp3",
+                            "KM3Dpm Banner.png",
+                            "KM3Dpm Icon.png",
+                            "KM3Dpm Logo.png",
+                            "Update 2.0.png"
+                        ],
                         "Kaizo Mario 3D World Practice Mode": {
                             "content": {
                                 "LayoutData": [
@@ -962,6 +982,12 @@
                                     }
                                 },
                                 "ObjectData": [
+                                    "BlockAssistLeaf.szs",
+                                    "BlockBrick.szs",
+                                    "BlockEmpty.szs",
+                                    "BlockHard.szs",
+                                    "BlockQuestion.szs",
+                                    "BlockQuestionLong.szs",
                                     "Bomb.szs",
                                     "BombBound.szs",
                                     "BombBoundGenerator.szs",
@@ -1174,6 +1200,9 @@
                                     "RouletteRoomZoneDesign1.szs",
                                     "RouletteRoomZoneMap1.szs",
                                     "RouletteRoomZoneSound1.szs",
+                                    "ShadowTunnelStageDesign1.szs",
+                                    "ShadowTunnelStageMap1.szs",
+                                    "ShadowTunnelStageSound1.szs",
                                     "SideWaveDesertStageDesign1.szs",
                                     "SideWaveDesertStageMap1.szs",
                                     "SideWaveDesertStageSound1.szs",
@@ -1217,10 +1246,10 @@
                                 "iconTex.tga",
                                 "meta.xml"
                             ]
-                        },
-                        "3": "Update 2.0.png"
+                        }
                     }
-                }
+                },
+                "_bContainsExe": false
             }
         },
         "_aModManagerIntegrations": []
