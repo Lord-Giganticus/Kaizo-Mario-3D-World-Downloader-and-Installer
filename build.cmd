@@ -3,8 +3,9 @@ nuget restore
 cd Updater
 dotnet add package Newtonsoft.Json --version 13.0.1
 msbuild Updater.csproj -p:Configuration=Release
-cd bin/Release/net5.0/publish/win-x86
-cd ../../../../../../
+cd ../
+echo %CD%
+pause
 copy Updater\bin\Release\net5.0\Updater.exe .
 copy Updater\bin\Release\net5.0\Updater.dll .
 copy Updater\bin\Release\net5.0\Updater.runtimeconfig.json .
