@@ -33,5 +33,8 @@ Section "" ;No components page, name is not important
   File "Kaizo Mario 3D World Practice Mode.exe"
   File "Kaizo Mario 3D World Normal Mode.exe"
   File "Updater.exe"
+  File "Updater.dll"
+  File "Updater.runtimeconfig.json"
+  File "Newtonsoft.Json.dll"
   
 SectionEnd ; end the section
