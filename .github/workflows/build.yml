@@ -26,7 +26,7 @@ jobs:
       with:
         vs-version: '16.5'
     - name: Install cURL
-      run: choco install curl --acceptlicense --confirm && choco install nuget.commandline --acceptlicense --confirm --force
+      run: choco install curl --acceptlicense --confirm
       shell: cmd
     - name: Run Scripts
       run: build.cmd
