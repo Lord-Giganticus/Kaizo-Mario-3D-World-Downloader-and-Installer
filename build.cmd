@@ -1,5 +1,5 @@
-nuget restore
 cd Updater
+nuget restore
 dotnet publish /p:Configuration=Release /p:PublishProfile=win-x86
 cd bin/Release/net5.0/publish/win-x86
 cd ../../../../../../
