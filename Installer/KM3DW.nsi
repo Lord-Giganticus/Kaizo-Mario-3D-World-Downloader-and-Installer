@@ -32,5 +32,6 @@ Section "" ;No components page, name is not important
   ; Put file there
   File "Kaizo Mario 3D World Practice Mode.exe"
   File "Kaizo Mario 3D World Normal Mode.exe"
+  File "Updater.exe"
   
 SectionEnd ; end the section
