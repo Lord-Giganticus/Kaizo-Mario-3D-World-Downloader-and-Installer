@@ -1,5 +1,6 @@
 nuget restore
 cd Updater
+dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
 dotnet add package Newtonsoft.Json --version 13.0.1
 msbuild Updater.csproj -p:Configuration=Release
 cd bin/Release/net5.0/publish/win-x86
