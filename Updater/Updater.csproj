@@ -10,10 +10,4 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Github.API.NET">
-      <HintPath>DLLs\Github.API.NET.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
