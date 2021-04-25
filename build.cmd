@@ -1,7 +1,7 @@
 dotnet clean --configuration Release && dotnet nuget locals all --clear
 nuget restore
 cd Updater
-dotnet publish /p:PublishProfile=win-x86
+dotnet publish /p:Configuration=Release /p:PublishProfile=win-x86
 cd "bin\Release\net5.0\publish\win-x86"
 makensis Updater.nsi
 cd ../../../../../../
