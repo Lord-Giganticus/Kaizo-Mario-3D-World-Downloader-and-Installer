@@ -1,21 +1,14 @@
 dotnet clean --configuration Release && dotnet nuget locals all --clear
 nuget restore
 cd Updater
-dotnet add package Newtonsoft.Json --version 13.0.1
-msbuild Updater.csproj -p:Configuration=Release
-cd ../
-echo %CD%
-pause
-copy Updater\bin\Release\net5.0\Updater.exe .
-copy Updater\bin\Release\net5.0\Updater.dll .
-copy Updater\bin\Release\net5.0\Updater.runtimeconfig.json .
-cp Updater\bin\Release\net5.0\Newtonsoft.Json.dll .
+dotnet publish /p:PublishProfile=win-x86
+cd bin\Release\net5.0\publish\win-x86
+makensis Updater.nsi
+cd ../../../../../../
+copy Updater\bin\Release\net5.0\publish\win-x86\KM3DW-Updater.exe .
 msbuild Installer/Installer.csproj -p:Configuration=Release
 cd Installer\bin\Release
-mv ../../../Updater.exe .
-mv ../../../Updater.dll .
-mv ../../../Updater.runtimeconfig.json .
-mv ../../../Newtonsoft.Json.dll .
+mv ../../../KM3DW-Updater.exe .
 Installer.exe
 mv "Kaizo Mario 3D World.exe" ../../../.
 cd ../../../

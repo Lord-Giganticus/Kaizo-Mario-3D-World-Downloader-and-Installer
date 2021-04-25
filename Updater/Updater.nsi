@@ -1,8 +1,8 @@
 ; The name of the installer
-Name "Kaizo Mario 3D World (Installer)"
+Name "Kaizo Mario 3D World (Updater)"
 
 ; The file to write
-OutFile "Kaizo Mario 3D World.exe"
+OutFile "KM3DW-Updater.exe"
 
 ; Request application privileges for Windows Vista
 RequestExecutionLevel user
@@ -11,7 +11,7 @@ RequestExecutionLevel user
 Unicode True
 
 ; The default installation directory
-InstallDir "$DESKTOP\Kaizo Mario 3D World"
+InstallDir "$DESKTOP\Kaizo Mario 3D World\Updater"
 
 ;--------------------------------
 
@@ -30,8 +30,6 @@ Section "" ;No components page, name is not important
   SetOutPath $INSTDIR
   
   ; Put file there
-  File "Kaizo Mario 3D World Practice Mode.exe"
-  File "Kaizo Mario 3D World Normal Mode.exe"
-  File "KM3DW-Updater.exe"
+  File "Updater.exe"
   
 SectionEnd ; end the section
