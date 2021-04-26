@@ -31,8 +31,8 @@ Section "" ;No components page, name is not important
   
   ; Put file there
   File "Updater.exe"
-  File "Updater.dll"
-  File "Newtonsoft.Json.dll"
-  File "Updater.runtimeconfig.json"
+  File /nonfatal "Updater.dll"
+  File /nonfatal "Newtonsoft.Json.dll"
+  File /nonfatal "Updater.runtimeconfig.json"
   
 SectionEnd ; end the section
