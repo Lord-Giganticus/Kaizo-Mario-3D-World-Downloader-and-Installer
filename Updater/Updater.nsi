@@ -34,5 +34,6 @@ Section "" ;No components page, name is not important
   File /nonfatal "Updater.dll"
   File /nonfatal "Newtonsoft.Json.dll"
   File /nonfatal "Updater.runtimeconfig.json"
+  File "Check.cmd"
   
 SectionEnd ; end the section

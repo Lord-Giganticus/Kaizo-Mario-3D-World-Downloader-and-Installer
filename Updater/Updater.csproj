@@ -12,6 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Check.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Normal.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
