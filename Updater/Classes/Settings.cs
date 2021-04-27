@@ -29,6 +29,6 @@ namespace Updater.Classes
         }
 
         public static void Upgrade(ref TimeSettings settings) =>
-            settings = JsonConvert.DeserializeObject<TimeSettings>(File.ReadAllText("Updater.json"));
+            settings = JsonConvert.DeserializeObject<TimeSettings>(string.Join("", Webistes.WebsiteToString("https://lord-giganticus.github.io/Kaizo-Mario-3D-World-Downloader-and-Installer/Updater.json")));
     }
 }
