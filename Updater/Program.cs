@@ -24,6 +24,7 @@ namespace Updater
             {
                 settings = new TimeSettings();
                 TimeSettings.Upgrade(ref settings);
+                settings.Save();
             }
 
             var sites = Webistes.WebsiteToString($"https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/tags");
