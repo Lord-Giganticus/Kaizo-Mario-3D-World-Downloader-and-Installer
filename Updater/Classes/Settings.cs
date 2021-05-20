@@ -8,7 +8,7 @@ namespace Updater.Classes
 {
     public abstract class SettingsBase
     {
-        protected abstract void Save();
+        public abstract void Save();
     }
 
     public class TimeSettings : SettingsBase
@@ -18,7 +18,7 @@ namespace Updater.Classes
         [DefaultValue(true)]
         public bool IsFirstRun { get; set; }
 
-        protected override void Save()
+        public override void Save()
         {
             var data = JsonConvert.SerializeObject(this,Formatting.Indented);
             File.WriteAllText("Updater.json", data);
