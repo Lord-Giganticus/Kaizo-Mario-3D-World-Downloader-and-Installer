@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.ComponentModel;
 
@@ -17,7 +13,7 @@ namespace Updater.Classes
 
     public class TimeSettings : SettingsBase
     {
-        public DateTime Time { get => new DateTime(2021, 4, 27); }
+        public static DateTime Time { get => new DateTime(2021, 5, 20); }
 
         [DefaultValue(true)]
         public bool IsFirstRun { get; set; }

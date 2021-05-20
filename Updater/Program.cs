@@ -1,7 +1,5 @@
 ﻿using System;
 using Newtonsoft.Json.Linq;
-using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.IO;
 using Updater.Classes;
 using System.Collections.Generic;
@@ -43,7 +41,7 @@ namespace Updater
                 var arg_tag = double.Parse(args[0]);
                 var date = DateTime.Parse(args[1]);
                 var tag = double.Parse(data.Name);
-                if (arg_tag != tag || settings.Time != date)
+                if (arg_tag != tag || TimeSettings.Time != date)
                     Curl.DownloadUpdate(tag);
                 else
                     Console.WriteLine("No need to update!");
@@ -54,7 +52,7 @@ namespace Updater
                 Console.WriteLine("Enter the day the installer was from in the format Year/Month/Day:");
                 var date = DateTime.Parse(Console.ReadLine());
                 var tag = double.Parse(data.Name);
-                if (arg_tag != tag || settings.Time != date)
+                if (arg_tag != tag || TimeSettings.Time != date)
                     Curl.DownloadUpdate(tag);
                 else
                     Console.WriteLine("No need to update!");
