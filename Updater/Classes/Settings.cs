@@ -13,7 +13,7 @@ namespace Updater.Classes
 
     public class TimeSettings : SettingsBase
     {
-        public static DateTime Time { get => new DateTime(2021, 5, 20); }
+        public static DateTime Time { get => new DateTime(2021, 5, 28); }
 
         [DefaultValue(true)]
         public bool IsFirstRun { get; set; }

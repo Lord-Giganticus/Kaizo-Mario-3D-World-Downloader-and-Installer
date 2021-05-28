@@ -31,6 +31,7 @@ Section "" ;No components page, name is not important
   
   ; Put file there
   File /r "Kaizo Mario 3D World Practice Mode\content"
+  File /r "Kaizo Mario 3D World Practice Mode\meta"
   File "Kaizo Mario 3D World Practice Mode\rules.txt"
   
 SectionEnd ; end the section
