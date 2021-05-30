@@ -2,7 +2,7 @@
 Name "Kaizo Mario 3D World (Updater)"
 
 ; The file to write
-OutFile "KM3DW-Updater.exe"
+OutFile "Kaizo Mario 3D World Updater.exe"
 
 ; Request application privileges for Windows Vista
 RequestExecutionLevel user
@@ -34,6 +34,5 @@ Section "" ;No components page, name is not important
   File /nonfatal "Updater.dll"
   File /nonfatal "Newtonsoft.Json.dll"
   File /nonfatal "Updater.runtimeconfig.json"
-  File "Check.cmd"
   
 SectionEnd ; end the section

@@ -1,62 +1,58 @@
 ﻿using System;
-using Newtonsoft.Json.Linq;
 using System.IO;
-using Updater.Classes;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Octokit;
+using Updater.Classes;
 
 namespace Updater
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            TimeSettings settings;
+        static void Main(string[] args) => MainAsync(args).GetAwaiter().GetResult();
 
-            if (!File.Exists("Updater.json")) {
-                settings = new TimeSettings
+        internal async static Task MainAsync(string[] vs)
+        {
+            var args = vs.ToList();
+            double? Tag = null;
+            foreach (var arg in args)
+            {
+                switch (arg)
                 {
-                    IsFirstRun = false
-                };
-                settings.Save();
+                    case "-t":
+                    case "--tag":
+                        Tag = double.Parse(args[args.IndexOf("-t") + 1]);
+                        break;
+                }
+            }
+            if (Tag == null)
+            {
+                Console.WriteLine("Enter the tag this Updater was from below.");
+                Tag = double.Parse(Console.ReadLine());
+            }
+            var releases = new List<Release>();
+            var client = new GitHubClient(new ProductHeaderValue("KM3DW-Updater"));
+            foreach (var r in await client.Repository.Release.GetAll("Lord-Giganticus", "Kaizo-Mario-3D-World-Downloader-and-Installer"))
+            {
+                releases.Add(r);
+            }
+            if (Tag != double.Parse(releases[0].TagName))
+            {
+                Curl.Download(releases[0].Assets[0].BrowserDownloadUrl, releases[0].Assets[0].Name);
             } else
             {
-                settings = new TimeSettings();
-                TimeSettings.Upgrade(ref settings);
-                settings.Save();
-            }
-
-            var sites = Webistes.WebsiteToString($"https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/tags");
-            var site = string.Join("", sites);
-            var a = JArray.Parse(site);
-            var l = new List<Datas>();
-            foreach (JObject o in a.Children<JObject>())
-                foreach (var p in o.Properties())
-                    l.Add(new Datas
-                    {
-                        Name = p.Value.ToString()
-                    });
-            var data = l[5];    
-            try
-            {
-                var arg_tag = double.Parse(args[0]);
-                var date = DateTime.Parse(args[1]);
-                var tag = double.Parse(data.Name);
-                if (arg_tag != tag || TimeSettings.Time != date)
-                    Curl.DownloadUpdate(tag);
-                else
-                    Console.WriteLine("No need to update!");
-            } catch 
-            {
-                Console.WriteLine("Enter the tag the installer was from:");
-                var arg_tag = double.Parse(Console.ReadLine());
-                Console.WriteLine("Enter the day the installer was from in the format Year/Month/Day:");
-                var date = DateTime.Parse(Console.ReadLine());
-                var tag = double.Parse(data.Name);
-                if (arg_tag != tag || TimeSettings.Time != date)
-                    Curl.DownloadUpdate(tag);
-                else
-                    Console.WriteLine("No need to update!");
+                Console.WriteLine("You sure this is the latest version? Yes/No");
+                switch (Console.ReadLine())
+                {
+                    case "no":
+                    case "NO":
+                    case "nO":
+                    case "No":
+                        Curl.Download(releases[0].Assets[0].BrowserDownloadUrl, releases[0].Assets[0].Name);
+                        break;
+                }
             }
         }
+
     }
 }

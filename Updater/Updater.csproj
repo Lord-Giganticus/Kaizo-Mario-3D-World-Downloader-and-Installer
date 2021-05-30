@@ -8,13 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Octokit" Version="0.50.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Check.cmd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Normal.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

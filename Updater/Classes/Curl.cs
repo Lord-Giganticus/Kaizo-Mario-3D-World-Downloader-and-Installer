@@ -1,28 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Diagnostics;
 
 namespace Updater.Classes
 {
-    class Curl
+    public class Curl
     {
-        public static void DownloadUpdate(double tag)
+        public static void Download(string url, string name)
         {
-            var info = new ProcessStartInfo
+            var startinfo = new ProcessStartInfo
             {
                 FileName = "cmd.exe",
                 WindowStyle = ProcessWindowStyle.Hidden,
-                Arguments = $"/c curl -k -L https://github.com/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/releases/download/{tag}/Kaizo.Mario.3D.World.exe -o Kaizo.Mario.3D.World.exe",
+                Arguments = $"/c curl -k -L {url} -o {name}",
                 CreateNoWindow = true,
                 RedirectStandardOutput = true
             };
-            var p = Process.Start(info);
-            Console.WriteLine("Downloading Update.");
+            Console.WriteLine("Download Started.");
+            var p = Process.Start(startinfo);
             while (!p.HasExited)
-                if (!p.HasExited)
-                    Console.WriteLine(p.StandardOutput.ReadLine());
-                else
+            {
+                if (p.HasExited)
+                {
+                    Console.WriteLine("Complete.");
                     break;
-            Console.WriteLine("Update Downloaded.");
+                }
+            }
         }
     }
 }
