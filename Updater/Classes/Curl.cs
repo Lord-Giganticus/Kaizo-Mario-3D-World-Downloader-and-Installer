@@ -19,7 +19,7 @@ namespace Updater.Classes
                 CreateNoWindow = true,
                 RedirectStandardOutput = true
             };
-            Console.WriteLine("Download Started.");
+            Console.WriteLine("Downloding Update...");
             var p = Process.Start(startinfo);
             while (!p.HasExited)
             {

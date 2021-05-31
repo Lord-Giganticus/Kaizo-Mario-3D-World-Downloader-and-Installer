@@ -9,11 +9,10 @@ namespace Updater
 {
     class Program
     {
-        static void Main(string[] args) => MainAsync(args).GetAwaiter().GetResult();
+        static void Main(string[] args) => MainAsync(args.ToList()).GetAwaiter().GetResult();
 
-        internal async static Task MainAsync(string[] vs)
+        internal async static Task MainAsync(List<string> args)
         {
-            var args = vs.ToList();
             double? Tag = null;
             foreach (var arg in args)
             {
@@ -53,6 +52,5 @@ namespace Updater
                 }
             }
         }
-
     }
 }
