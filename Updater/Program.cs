@@ -8,7 +8,9 @@ namespace Updater
 {
     class Program
     {
-        private protected static DateTimeOffset dateTime = new DateTimeOffset(new DateTime(2021, 5, 31, 10, 0, 0));
+        private protected static DateTime Day { get => new DateTime(2021, 5, 31, 10, 0, 0); }
+
+        private protected static DateTimeOffset DateTime { get => new DateTimeOffset(Day); }
 
         static void Main(string[] args) => MainAsync(args.ToList()).GetAwaiter().GetResult();
 
@@ -42,7 +44,7 @@ namespace Updater
                     case "nO":
                     case "No":
                         var t = new Time(client);
-                        if (!t.CheckTime(dateTime).GetAwaiter().GetResult())
+                        if (!t.CheckTime(DateTime).GetAwaiter().GetResult())
                             Curl.Download(releases[0].Assets[0].BrowserDownloadUrl, releases[0].Assets[0].Name);
                         else
                             Console.WriteLine("Time check suggests that there is no need to update!");
