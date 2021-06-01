@@ -8,7 +8,7 @@ namespace Updater
 {
     class Program
     {
-        private protected static DateTimeOffset dateTime = new DateTimeOffset(new DateTime(2021, 5, 31, 9, 0, 0));
+        private protected static DateTimeOffset dateTime = new DateTimeOffset(new DateTime(2021, 5, 31, 10, 0, 0));
 
         static void Main(string[] args) => MainAsync(args.ToList()).GetAwaiter().GetResult();
 
