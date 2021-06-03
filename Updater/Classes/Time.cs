@@ -20,14 +20,10 @@ namespace Updater.Classes
         {
             var releases = await Client.Repository.Release.GetAll("Lord-Giganticus", "Kaizo-Mario-3D-World-Downloader-and-Installer");
             var release = releases[0];
-            var release_time = release.CreatedAt;
-            if (Time.Day == release_time.Day)
-                if (Time.Hour != release_time.Hour)
-                    return false;
-                else
-                    return true;
-            else
+            if (release.CreatedAt > Time)
                 return false;
+            else
+                return true;
         }
     }
 }
