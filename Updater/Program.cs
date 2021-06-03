@@ -12,11 +12,10 @@ namespace Updater
 
         internal async static Task MainAsync(List<string> args)
         {
-            Console.Title = "Kaizo Mario 3D World Updater";
-            Console.BackgroundColor = ConsoleColor.Red;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Title = $"Kaizo Mario 3D World Updater: Last built on {Data.CompileTime}";
+            Console.ForegroundColor = ConsoleColor.Green;
 
-            double? Tag = null;
+            double Tag = 2.69;
             foreach (var arg in args)
             {
                 Tag = arg switch
@@ -33,12 +32,13 @@ namespace Updater
                 releases.Add(r);
             }
             if (Tag != double.Parse(releases[0].TagName))
-            {
                 if (!time.CheckTime(Data.CompileTimeOffest).GetAwaiter().GetResult())
                     Curl.Download(releases[0].Assets[0].BrowserDownloadUrl, releases[0].Assets[0].Name);
-            }
-            else if (!time.CheckTime(Data.CompileTimeOffest).GetAwaiter().GetResult())
-                Curl.Download(releases[0].Assets[0].BrowserDownloadUrl, releases[0].Assets[0].Name);
+                else
+                    Console.WriteLine("No need to update. Press any key to exit.");
+            else
+                Console.WriteLine("No need to update. Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
