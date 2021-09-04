@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace Updater.Classes
 {
-    public class Curl
+    public class Cmd
     {
         public static void Download(string url, string name)
         {
@@ -11,7 +11,7 @@ namespace Updater.Classes
             {
                 FileName = "cmd.exe",
                 WindowStyle = ProcessWindowStyle.Hidden,
-                Arguments = $"/c curl -k -L {url} -o {name}",
+                Arguments = $"/c Powershell Invoke-WebRequest -Uri \"{url}\" -OutFile \"{name}\"",
                 CreateNoWindow = true,
                 RedirectStandardOutput = true
             };

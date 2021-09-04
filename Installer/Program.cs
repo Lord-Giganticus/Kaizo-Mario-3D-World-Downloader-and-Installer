@@ -17,7 +17,7 @@ namespace Installer
             } if (!File.Exists("Run.cmd"))
             {
                 ExtractRecourse.ViaString("Run.cmd", Properties.Resources.Run);
-            }
+            } if (!File.Exists("GetUrl.ps1")) ExtractRecourse.ViaBytes("GetUrl.ps1", Properties.Resources.GetUrl);
             Console.WriteLine("Downloading files");
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
             Process.Start("CMD.exe", "/c Run.cmd && exit").WaitForExit();

@@ -9,7 +9,7 @@ namespace Updater.Classes
     {
         internal static FileInfo ExeInfo
         {
-            get => new FileInfo(Assembly.GetExecutingAssembly().Location);
+            get => new(Assembly.GetExecutingAssembly().Location);
         }
 
         internal static DirectoryInfo ExeDir

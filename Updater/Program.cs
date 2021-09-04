@@ -26,14 +26,14 @@ namespace Updater
             }
             var releases = new List<Release>();
             var client = new GitHubClient(new ProductHeaderValue("KM3DW-Updater"));
-            Time time = new Time(client);
+            Time time = new(client);
             foreach (var r in await client.Repository.Release.GetAll("Lord-Giganticus", "Kaizo-Mario-3D-World-Downloader-and-Installer"))
             {
                 releases.Add(r);
             }
             if (Tag != double.Parse(releases[0].TagName))
                 if (!time.CheckTime(Data.CompileTimeOffest).GetAwaiter().GetResult())
-                    Curl.Download(releases[0].Assets[0].BrowserDownloadUrl, releases[0].Assets[0].Name);
+                    Cmd.Download(releases[0].Assets[0].BrowserDownloadUrl, releases[0].Assets[0].Name);
                 else
                     Console.WriteLine("No need to update. Press any key to exit.");
             else

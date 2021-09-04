@@ -19,7 +19,7 @@ namespace Installer.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -61,8 +61,24 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to curl -k -L https://gamebanana.com/maps/download/211946?api=FilesModule -o config.json
-        ///node url.
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] GetUrl {
+            get {
+                object obj = ResourceManager.GetObject("GetUrl", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Powershell ./GetUrl.ps1 https://gamebanana.com/dl/543972 &gt; result.txt
+        ///set /p OUTPUT=&lt;result.txt
+        ///rm result.txt
+        ///Powershell Invoke-WebRequest -Uri &quot;%OUTPUT%&quot; -OutFile kaizo_mario_3d_world_269.zip
+        ///Powershell ./GetUrl.ps1 &quot;https://gamebanana.com/dl/543971&quot; &gt; result.txt
+        ///set /p OUTPUT=&lt;result.txt
+        ///rm result.txt
+        ///Powershell Invoke-WebRequest -Uri &quot;%OUTPUT%&quot; -OutFile kaizo_mario_3d_world_practice_269.zip.
         /// </summary>
         internal static string Run {
             get {

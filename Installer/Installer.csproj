@@ -86,6 +86,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Resources\JS\config.json" />
+    <None Include="Resources\JS\GetUrl.ps1" />
     <None Include="Resources\JS\Run.cmd" />
     <None Include="SdCafiine-Normal-EUR.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
