@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
 using SM3DW_Keys;
 using static Installer.Classes.Manager;
 
@@ -10,17 +11,24 @@ namespace Installer
     {
         static void Main()
         {
-            
-            if (!File.Exists("URL.js"))
-            {
-                ExtractRecourse.ViaString("URL.js", Properties.Resources.URL);
-            } if (!File.Exists("Run.cmd"))
-            {
-                ExtractRecourse.ViaString("Run.cmd", Properties.Resources.Run);
-            } if (!File.Exists("GetUrl.ps1")) ExtractRecourse.ViaBytes("GetUrl.ps1", Properties.Resources.GetUrl);
             Console.WriteLine("Downloading files");
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
-            Process.Start("CMD.exe", "/c Run.cmd && exit").WaitForExit();
+            var request = (HttpWebRequest)WebRequest.Create("https://gamebanana.com/dl/543972");
+            using (var f = File.Create("kaizo_mario_3d_world_269.zip"))
+            {
+                using (var stream = request.GetResponse().GetResponseStream())
+                {
+                    stream.CopyTo(f);
+                }
+            }
+            request = (HttpWebRequest)WebRequest.Create("https://gamebanana.com/dl/543971");
+            using (var f = File.Create("kaizo_mario_3d_world_practice_269.zip"))
+            {
+                using (var stream = request.GetResponse().GetResponseStream())
+                {
+                    stream.CopyTo(f);
+                }
+            }
             Console.WriteLine("Extracting zips");
             Process.Start("CMD.exe", "/c 7z x *.zip -xr!Extras && exit").WaitForExit();
             File.Delete("Kaizo Mario 3D World/meta/meta.xml");

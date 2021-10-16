@@ -19,7 +19,7 @@ namespace Installer.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,57 +57,6 @@ namespace Installer.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] GetUrl {
-            get {
-                object obj = ResourceManager.GetObject("GetUrl", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Powershell ./GetUrl.ps1 https://gamebanana.com/dl/543972 &gt; result.txt
-        ///set /p OUTPUT=&lt;result.txt
-        ///rm result.txt
-        ///Powershell Invoke-WebRequest -Uri &quot;%OUTPUT%&quot; -OutFile kaizo_mario_3d_world_269.zip
-        ///Powershell ./GetUrl.ps1 &quot;https://gamebanana.com/dl/543971&quot; &gt; result.txt
-        ///set /p OUTPUT=&lt;result.txt
-        ///rm result.txt
-        ///Powershell Invoke-WebRequest -Uri &quot;%OUTPUT%&quot; -OutFile kaizo_mario_3d_world_practice_269.zip.
-        /// </summary>
-        internal static string Run {
-            get {
-                return ResourceManager.GetString("Run", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to // Made by Lord-Giganticus
-        ///const fs = require(&apos;fs&apos;);
-        ///const data = require(&apos;./config.json&apos;)
-        ///var files = data._aCellValues._aFiles
-        ///var line = &quot;&quot;
-        ///for (var key in files) {
-        ///    var value = files[key];
-        ///    var url = value._sDownloadUrl
-        ///    line = line + &quot;curl -k -L &quot;+ url+ &quot; -o &quot;+ value._sFile + &quot;\n&quot; 
-        ///}
-        ///fs.writeFile(&apos;download.cmd&apos;, line, err =&gt; {
-        ///    if (err) {
-        ///        console.error(err)
-        ///        return
-        ///    }
-        ///    return console.log(&quot;Complete.&quot;);
-        ///}).
-        /// </summary>
-        internal static string URL {
-            get {
-                return ResourceManager.GetString("URL", resourceCulture);
             }
         }
     }
