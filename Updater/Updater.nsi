@@ -31,7 +31,6 @@ Section "" ;No components page, name is not important
   
   ; Put file there
   File "Updater.exe"
-  File "Start.cmd"
   File /nonfatal "Updater.dll"
   File /nonfatal "Newtonsoft.Json.dll"
   File /nonfatal "Updater.runtimeconfig.json"

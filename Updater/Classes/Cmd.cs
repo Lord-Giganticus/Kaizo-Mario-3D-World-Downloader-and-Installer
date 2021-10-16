@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Net;
+using System.IO;
 
 namespace Updater.Classes
 {
@@ -7,24 +8,12 @@ namespace Updater.Classes
     {
         public static void Download(string url, string name)
         {
-            var startinfo = new ProcessStartInfo
-            {
-                FileName = "cmd.exe",
-                WindowStyle = ProcessWindowStyle.Hidden,
-                Arguments = $"/c Powershell Invoke-WebRequest -Uri \"{url}\" -OutFile \"{name}\"",
-                CreateNoWindow = true,
-                RedirectStandardOutput = true
-            };
             Console.WriteLine("Downloding Update...");
-            var p = Process.Start(startinfo);
-            while (!p.HasExited)
-            {
-                if (p.HasExited)
-                {
-                    Console.WriteLine("Complete.");
-                    break;
-                }
-            }
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            using var f = new FileStream(name, FileMode.OpenOrCreate);
+            using var stream = request.GetResponse().GetResponseStream();
+            stream.CopyTo(f);
+            Console.WriteLine("Complete.");
         }
     }
 }
