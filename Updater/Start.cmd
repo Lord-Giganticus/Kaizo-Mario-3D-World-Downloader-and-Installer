@@ -1,1 +1,0 @@
-cmd /c Updater.exe -t 2.69

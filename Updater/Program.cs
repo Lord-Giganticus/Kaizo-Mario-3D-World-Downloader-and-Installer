@@ -1,44 +1,43 @@
-﻿using System;
+﻿using System.IO;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Octokit;
+using System.Linq;
+using System.Net;
 using Updater.Classes;
 
 namespace Updater
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args) => MainAsync(args.ToList()).GetAwaiter().GetResult();
+        static void Main() => MainAsync().GetAwaiter().GetResult();
 
-        internal async static Task MainAsync(List<string> args)
+        internal async static Task MainAsync()
         {
-            Console.Title = $"Kaizo Mario 3D World Updater: Last built on {Data.CompileTime}";
-            Console.ForegroundColor = ConsoleColor.Green;
-
-            double Tag = 2.69;
-            foreach (var arg in args)
+            var request = (HttpWebRequest)WebRequest.Create("https://api.github.com/repos/Lord-Giganticus/Kaizo-Mario-3D-World-Downloader-and-Installer/releases");
+            request.UserAgent = "KM3DW-Updater";
+            string result;
+            using (var r = (await request.GetResponseAsync()).GetResponseStream())
             {
-                Tag = arg switch
-                {
-                    "-t" or "--tag" => double.Parse(args[args.IndexOf("-t") + 1] ?? args[args.IndexOf("--tag") + 1]),
-                    _ => 2.69
-                };
+                using var sr = new StreamReader(r);
+                result = sr.ReadToEnd();
             }
-            var releases = new List<Release>();
-            var client = new GitHubClient(new ProductHeaderValue("KM3DW-Updater"));
-            Time time = new(client);
-            foreach (var r in await client.Repository.Release.GetAll("Lord-Giganticus", "Kaizo-Mario-3D-World-Downloader-and-Installer"))
+            var start = result.IndexOf("assets_url\":");
+            start = result.IndexOf(':', start) + 2;
+            var end = result.IndexOf(',', start) - 1;
+            result = result[start..end];
+            request = (HttpWebRequest)WebRequest.Create(result);
+            request.UserAgent = "KM3DW-Updater";
+            using (var r = (await request.GetResponseAsync()).GetResponseStream()) 
             {
-                releases.Add(r);
+                using var sr = new StreamReader(r);
+                result = sr.ReadToEnd();
             }
-            if (Tag != double.Parse(releases[0].TagName))
-                if (!time.CheckTime(Data.CompileTimeOffest).GetAwaiter().GetResult())
-                    Cmd.Download(releases[0].Assets[0].BrowserDownloadUrl, releases[0].Assets[0].Name);
-                else
-                    Console.WriteLine("No need to update. Press any key to exit.");
-            else
-                Console.WriteLine("No need to update. Press any key to exit.");
-            Console.ReadKey();
+            start = result.IndexOf("browser_download_url\":");
+            start = result.IndexOf(':', start) + 2;
+            end = result.IndexOf("\"", start);
+            result = result[start..end];
+            var name = result[(result.LastIndexOf('/')+ 1)..];
+            Cmd.Download(result, name);
         }
     }
 }

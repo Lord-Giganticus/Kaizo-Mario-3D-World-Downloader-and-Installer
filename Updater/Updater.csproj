@@ -8,15 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Octokit" Version="0.50.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="Normal.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Start.cmd">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="Updater.nsi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
