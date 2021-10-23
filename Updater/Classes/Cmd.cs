@@ -13,7 +13,7 @@ namespace Updater.Classes
             using var f = new FileStream(name, FileMode.OpenOrCreate);
             using var stream = request.GetResponse().GetResponseStream();
             stream.CopyTo(f);
-            Console.WriteLine("Complete.");
+            Console.WriteLine("Complete. Press any key to exit");
         }
     }
 }

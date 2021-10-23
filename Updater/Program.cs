@@ -1,7 +1,8 @@
 ﻿using System.IO;
-using System.Collections.Generic;
+using System;
 using System.Threading.Tasks;
-using System.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Net;
 using Updater.Classes;
 
@@ -21,23 +22,18 @@ namespace Updater
                 using var sr = new StreamReader(r);
                 result = sr.ReadToEnd();
             }
-            var start = result.IndexOf("assets_url\":");
-            start = result.IndexOf(':', start) + 2;
-            var end = result.IndexOf(',', start) - 1;
-            result = result[start..end];
+            result = JArray.Parse(result)[0]["assets_url"].ToString();
             request = (HttpWebRequest)WebRequest.Create(result);
             request.UserAgent = "KM3DW-Updater";
-            using (var r = (await request.GetResponseAsync()).GetResponseStream()) 
+            using (var r = (await request.GetResponseAsync()).GetResponseStream())
             {
                 using var sr = new StreamReader(r);
                 result = sr.ReadToEnd();
             }
-            start = result.IndexOf("browser_download_url\":");
-            start = result.IndexOf(':', start) + 2;
-            end = result.IndexOf("\"", start);
-            result = result[start..end];
-            var name = result[(result.LastIndexOf('/')+ 1)..];
+            var name = JArray.Parse(result)[0]["name"].ToString();
+            result = JArray.Parse(result)[0]["browser_download_url"].ToString();
             Cmd.Download(result, name);
+            Console.ReadKey();
         }
     }
 }
