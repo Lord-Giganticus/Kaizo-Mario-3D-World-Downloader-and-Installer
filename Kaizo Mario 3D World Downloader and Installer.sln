@@ -5,10 +5,11 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{613C5D73-7895-4827-9506-0B6B7307AF67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "Updater\Updater.csproj", "{D5FF8174-8055-48E2-8F46-E4D7F8B082C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Updater", "Updater\Updater.csproj", "{D5FF8174-8055-48E2-8F46-E4D7F8B082C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4B95660-2132-4436-9C63-363736B2FD76}"
 	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
 		nuget.config = nuget.config
 	EndProjectSection
 EndProject

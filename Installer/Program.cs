@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Net;
+using Newtonsoft.Json.Linq;
 using SM3DW_Keys;
 using static Installer.Classes.Manager;
 
@@ -13,22 +15,30 @@ namespace Installer
         {
             Console.WriteLine("Downloading files");
             Environment.CurrentDirectory = Directory.GetCurrentDirectory();
-            var request = (HttpWebRequest)WebRequest.Create("https://gamebanana.com/dl/543972");
-            using (var f = File.Create("kaizo_mario_3d_world_269.zip"))
+            using (var wc = new WebClient())
             {
-                using (var stream = request.GetResponse().GetResponseStream())
+                string result;
+                result = wc.DownloadString("https://api.gamebanana.com/Core/Item/Data?itemtype=Mod&itemid=149492&fields=Files%28%29.aFiles%28%29");
+                var arr = JArray.Parse(result);
+                JToken[] objs = new JToken[((JObject)arr[0]).Count];
+                objs = arr[0].ToArray();
+                (string name, string url)[] downloads = new (string name, string url)[objs.Length];
+                for (int i = 0; i < objs.Length; i++)
                 {
-                    stream.CopyTo(f);
+                    downloads[i] = (objs[i].First.First.Next.ToObject<string>(), objs[i].First.Last.ToObject<string>());
                 }
-            }
-            request = (HttpWebRequest)WebRequest.Create("https://gamebanana.com/dl/543971");
-            using (var f = File.Create("kaizo_mario_3d_world_practice_269.zip"))
-            {
-                using (var stream = request.GetResponse().GetResponseStream())
+                foreach (var (name, url) in downloads)
                 {
-                    stream.CopyTo(f);
+                    var request = (HttpWebRequest)WebRequest.Create(url);
+                    using (var r = request.GetResponse().GetResponseStream())
+                    {
+                        using (var f = new FileStream(name, FileMode.Create, FileAccess.Write))
+                        {
+                            r.CopyTo(f);
+                        }
+                    }
                 }
-            }
+            }  
             Console.WriteLine("Extracting zips");
             Process.Start("CMD.exe", "/c 7z x *.zip -xr!Extras && exit").WaitForExit();
             File.Delete("Kaizo Mario 3D World/meta/meta.xml");

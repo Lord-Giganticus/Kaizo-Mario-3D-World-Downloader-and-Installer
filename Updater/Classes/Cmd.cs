@@ -8,12 +8,11 @@ namespace Updater.Classes
     {
         public static void Download(string url, string name)
         {
-            Console.WriteLine("Downloding Update...");
+            Console.WriteLine($"Downloding {name}...");
             var request = (HttpWebRequest)WebRequest.Create(url);
             using var f = new FileStream(name, FileMode.OpenOrCreate);
             using var stream = request.GetResponse().GetResponseStream();
             stream.CopyTo(f);
-            Console.WriteLine("Complete. Press any key to exit");
         }
     }
 }
